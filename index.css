@@ -28,6 +28,7 @@ a.active {
 
 li.cancel {
   color: rgb(255, 255, 255);
+  margin-left: -15px;
 }
 
 input[type="search"] {
@@ -36,10 +37,12 @@ input[type="search"] {
   border-radius: 4px;
   height: 30px;
   padding-left: 10px;
+  display: block;
+  margin-left: -15px;
 }
 
 input:focus {
-    outline-color: transparent;
+  outline-color: transparent;
 }
 
 .sticky-top {
@@ -89,9 +92,6 @@ input:focus {
 .col-lg-8 {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: -20px;
 }
 
 .col-lg-4 {
@@ -109,11 +109,6 @@ input:focus {
   flex: 0 0 66.666667%;
   max-width: 66.666667%;
   background-color: #f0f0f0;
-}
-
-.contact {
-  text-align: center;
-  margin:auto;
 }
 
 textarea {
@@ -148,7 +143,10 @@ img {
   margin-top: 25px;
 }
 
-caption {
+.caption,
+img {
   display: block;
   width: 100%;
+  text-align: center;
+  margin-left: -15px;
 }
