@@ -28,7 +28,6 @@ a.active {
 
 li.cancel {
   color: rgb(255, 255, 255);
-  text-align: left;
 }
 
 input {
@@ -53,11 +52,6 @@ input {
   margin-right: auto;
   margin-left: auto;
 }
-
-/* .img-header {
-  width: 5%;
-  height: 10%;
-} */
 
 @media (min-width: 576px) {
   .container {
@@ -137,8 +131,8 @@ li {
 }
 
 img {
-  width: 50%;
-  height: 50%;
+  width: 70%;
+  height: 70%;
   border: 3px solid #fff;
   border-radius: 50%;
 }
