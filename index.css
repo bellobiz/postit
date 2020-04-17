@@ -30,12 +30,16 @@ li.cancel {
   color: rgb(255, 255, 255);
 }
 
-input {
+input[type="search"] {
   width: 100%;
   border: 1px solid #f1f1f1;
   border-radius: 4px;
   height: 30px;
   padding-left: 10px;
+}
+
+input:focus {
+    outline-color: transparent;
 }
 
 .sticky-top {
@@ -87,6 +91,7 @@ input {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+  margin-left: -20px;
 }
 
 .col-lg-4 {
@@ -108,7 +113,7 @@ input {
 
 .contact {
   text-align: center;
-  margin-left: -45px;
+  margin:auto;
 }
 
 textarea {
@@ -144,5 +149,6 @@ img {
 
 caption {
   display: block;
-  width: auto;
+  width: 100%;
+  margin-bottom: 10px;
 }
