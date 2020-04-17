@@ -53,7 +53,6 @@ input:focus {
 .sticky-top {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
   z-index: 1020;
 }
 
@@ -110,17 +109,14 @@ input:focus {
 }
 
 textarea {
-  width: 96%;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 98%;
   height: 60px;
   overflow-y: hidden;
   border: 1px solid #fff;
   border-radius: 4px;
   padding: 10px;
   resize: none;
+  margin-left: 4px;
 }
 
 .sticky {
