@@ -6,6 +6,16 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    box-shadow: 5px 5px 5px 5px #bbb;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -98,7 +108,7 @@ input:focus {
   -ms-flex: 0 0 33.333333%;
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
-  height: 600px;
+  height: 550px;
   overflow-y: auto;
   color: white;
   background-color: #333;
@@ -112,9 +122,9 @@ input:focus {
 }
 
 textarea {
-  width: 100%;
+  width: 96%;
   position: relative;
-  top: 95%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 60px;
@@ -123,6 +133,13 @@ textarea {
   border-radius: 4px;
   padding: 10px;
   resize: none;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  position: relative;
+  top: 95%;
 }
 
 textarea:focus {
