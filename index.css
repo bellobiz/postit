@@ -54,14 +54,13 @@ i#search-bar {
 }
 
 input[type="search"]#contacts-bar {
-  width: 100%;
+  width: 30%;
   border: 1px solid #f1f1f1;
   border-radius: 4px;
   height: 30px;
   padding-left: 10px;
-  display: block;
-  margin-left: 20px;
-  margin-top: 5px;
+  margin-left: auto;
+  margin-top: 20px;
   display: none;
 }
 
