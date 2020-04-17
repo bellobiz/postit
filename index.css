@@ -12,7 +12,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    height: 90%;
     box-shadow: 5px 5px 5px 5px #bbb;
 }
 
@@ -139,7 +138,7 @@ textarea {
   position: -webkit-sticky;
   position: sticky;
   position: relative;
-  top: 95%;
+  top: 90%;
 }
 
 textarea:focus {
