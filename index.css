@@ -99,14 +99,12 @@ input:focus {
 }
 
 textarea {
-  width: 98%;
+  width: 99%;
   height: 60px;
-  overflow-y: hidden;
   border: 1px solid #fff;
   border-radius: 4px;
   padding: 10px;
   resize: none;
-  margin-left: 4px;
 }
 
 .sticky {
