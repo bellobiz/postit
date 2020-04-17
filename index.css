@@ -7,13 +7,8 @@ body {
 }
 
 body {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    box-shadow: 5px 5px 5px 5px #bbb;
-    height: 100%;
+  width: 100%;
+  box-shadow: 5px 5px 5px 5px #bbb;
 }
 
 * {
@@ -24,7 +19,7 @@ ul.nav {
   margin: 0;
   padding: 0;
   display: flex;
-  background-color: #111;
+  background-color: rgb(24, 24, 24);
 }
 
 a {
@@ -70,25 +65,16 @@ input:focus {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 550px
 }
 
 .row {
@@ -96,6 +82,8 @@ input:focus {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 .col-lg-4,
@@ -111,7 +99,8 @@ input:focus {
   height: 550px;
   overflow-y: auto;
   color: white;
-  background-color: #333;
+  background-color: purple;
+  /* background-color: #333; */
 }
 
 .col-lg-8 {
