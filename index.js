@@ -8,7 +8,7 @@ const openBar = () => {
     close.style.maxWidth = '33.333333%';
     chatSection.style.flex = '0 0 66.666667%';
     chatSection.style.maxWidth = '66.666667%';
-    group_navItem.style.color = '#fff';
+    cancel.style.color = '';
 }
 
 const closeBar = () => {
@@ -16,7 +16,7 @@ const closeBar = () => {
     close.style.maxWidth = '';
     chatSection.style.flex = '';
     chatSection.style.maxWidth = '';
-    group_navItem.style.color = '';
+    cancel.style.color = '#fff';
 }
 
 cancel.addEventListener('click', openBar);
