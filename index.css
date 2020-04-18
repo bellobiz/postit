@@ -98,20 +98,19 @@ input:focus {
 }
 
 .col-lg-4 {
-  -ms-flex: 0 0 33.333333%;
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
+  -ms-flex: 0 0 0;
+  flex: 0 0 0;
+  max-width: 0;
   height: 550px;
   overflow-y: auto;
   color: white;
   background-color: purple;
-  /* background-color: #333; */
 }
 
 .col-lg-8 {
-  -ms-flex: 0 0 66.666667%;
-  flex: 0 0 66.666667%;
-  max-width: 66.666667%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
   background-color: #f0f0f0;
 }
 
