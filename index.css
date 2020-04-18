@@ -102,7 +102,7 @@ input:focus {
   -ms-flex: 0 0 0;
   flex: 0 0 0;
   max-width: 0;
-  height: 540px;
+  height: 545px;
   overflow-y: auto;
   color: white;
   background-color: purple;
@@ -113,7 +113,8 @@ input:focus {
   flex: 0 0 100%;
   max-width: 100%;
   background-color: #f0f0f0;
-  height: auto;
+  height: 545px;
+  overflow-y: auto;
 }
 
 textarea {
