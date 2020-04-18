@@ -155,3 +155,13 @@ img {
   text-align: center;
   margin-left: -20px;
 }
+
+@media (max-width: 600px) {
+  li.nav-item.active {
+    border-bottom: 2px solid #fff;
+    line-height: 1.8;
+  }
+  a.active {
+    color: #fff;
+  }
+}
