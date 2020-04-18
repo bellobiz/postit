@@ -155,7 +155,7 @@ img {
   margin-left: -20px;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   li.nav-item.active {
     border-bottom: 2px solid #fff;
     line-height: 1.8;
@@ -163,4 +163,4 @@ img {
   a.active {
     color: #fff;
   }
-}
+} */
