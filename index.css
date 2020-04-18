@@ -117,6 +117,15 @@ input:focus {
   overflow-y: auto;
 }
 
+@media (min-width: 576px) {
+  .col-lg-4 {
+    height: 602px;
+  }
+  .col-lg-8 {
+    height: 602px;
+  }
+}
+
 textarea {
   width: 99%;
   height: 60px;
