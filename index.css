@@ -133,14 +133,15 @@ textarea {
   border-radius: 4px;
   padding: 10px;
   resize: none;
+  display: flex;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 
-.sticky-bottom {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 100%;
+.text-area {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
 }
 
 textarea:focus {
