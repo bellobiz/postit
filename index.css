@@ -101,7 +101,7 @@ input:focus {
   -ms-flex: 0 0 0;
   flex: 0 0 0;
   max-width: 0;
-  height: 550px;
+  height: 500px;
   overflow-y: auto;
   color: white;
   background-color: purple;
@@ -112,6 +112,7 @@ input:focus {
   flex: 0 0 100%;
   max-width: 100%;
   background-color: #f0f0f0;
+  height: auto;
 }
 
 textarea {
@@ -123,7 +124,7 @@ textarea {
   resize: none;
 }
 
-.sticky {
+.sticky-bottom {
   position: -webkit-sticky;
   position: sticky;
   top: 100%;
