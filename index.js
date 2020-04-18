@@ -41,11 +41,18 @@ const closeSearch = () => {
     navItem3.style.display = '';
     contactsBar.style.marginLeft = '';
 }
-// for (i = 0; i <= navItem.length; i++) {
-//     navItem[i].style.display = 'none'
-// }
+
+const altCloseSearch = () => {
+    searchBar.style.display = '';
+    contactsBar.style.display = '';
+    navItem1.style.display = '';
+    navItem2.style.display = '';
+    navItem3.style.display = '';
+    contactsBar.style.marginLeft = '';
+}
 
 searchBar.addEventListener('click', openSearch);
 contactsBar.addEventListener('blur', closeSearch);
+chatSection.addEventListener('click', altCloseSearch)
 cancel.addEventListener('click', openBar);
 group_navItem.addEventListener('click', closeBar);
