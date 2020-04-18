@@ -13,7 +13,7 @@ const openBar = () => {
     close.style.maxWidth = '33.333333%';
     chatSection.style.flex = '0 0 66.666667%';
     chatSection.style.maxWidth = '66.666667%';
-    cancel.style.color = '';
+    cancel.style.color = '#a8a4a4';
 }
 
 const closeBar = () => {
