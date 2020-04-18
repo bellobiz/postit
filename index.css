@@ -96,13 +96,14 @@ input:focus {
 .col-lg-8 {
   position: relative;
   width: 100%;
+  
+  height: auto;
 }
 
 .col-lg-4 {
   -ms-flex: 0 0 0;
   flex: 0 0 0;
   max-width: 0;
-  height: 545px;
   overflow-y: auto;
   color: white;
   background-color: purple;
@@ -169,13 +170,3 @@ img {
   text-align: center;
   margin-left: -20px;
 }
-
-/* @media (max-width: 600px) {
-  li.nav-item.active {
-    border-bottom: 2px solid #fff;
-    line-height: 1.8;
-  }
-  a.active {
-    color: #fff;
-  }
-} */
