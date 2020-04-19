@@ -103,7 +103,7 @@ input:focus {
   color: white;
   background-color: purple;
   height: 568px;
-  z-index: 0
+  z-index: 1;
 }
 
 .col-lg-8 {
