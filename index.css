@@ -121,7 +121,7 @@ textarea {
   height: 60px;
   border: 1px solid #fff;
   border-radius: 4px;
-  padding: 10px;
+  padding: 10px 35px 10px 10px;
   resize: none;
   display: flex;
   margin-left: auto;
@@ -173,32 +173,26 @@ i.far.fa-paper-plane {
   color: rgb(8, 122, 8);
 }
 
-@media (max-width: 952px) {
+@media (max-width: 587px) {
   i.far.fa-paper-plane {
-    left: 93%
+    left: 89%;
   }
 }
 
-@media (max-width: 696px) {
+@media (max-width: 500px) {
   i.far.fa-paper-plane {
-    left: 92.5%
+    left: 88%
   }
 }
 
-@media (max-width: 579px) {
+@media (max-width: 400px) {
   i.far.fa-paper-plane {
-    left: 91.5%
+    left: 86%
   }
 }
 
-@media (max-width: 346px) {
+@media (max-width: 280px) {
   i.far.fa-paper-plane {
-    left: 90.5%
-  }
-}
-
-@media (max-width: 286px) {
-  i.far.fa-paper-plane {
-    left: 89.5%
+    left: 83%
   }
 }
