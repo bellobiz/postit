@@ -208,6 +208,12 @@ i.far.fa-paper-plane {
   }
 }
 
+@media (max-width: 640px) {
+  i.far.fa-paper-plane {
+    left: 90%;
+  }
+}
+
 @media (max-width: 587px) {
   i.far.fa-paper-plane {
     left: 89%;
