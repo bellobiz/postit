@@ -172,7 +172,7 @@ img {
   margin-left: -20px;
 }
 
-i.fas.fa-paper-plane {
+i.far.fa-paper-plane {
   font-size:24px; 
   position: absolute; 
   left: 93.5%;
@@ -181,31 +181,31 @@ i.fas.fa-paper-plane {
 }
 
 @media (max-width: 952px) {
-  i.fas.fa-paper-plane {
+  i.far.fa-paper-plane {
     left: 93%
   }
 }
 
 @media (max-width: 696px) {
-  i.fas.fa-paper-plane {
+  i.far.fa-paper-plane {
     left: 92.5%
   }
 }
 
 @media (max-width: 579px) {
-  i.fas.fa-paper-plane {
+  i.far.fa-paper-plane {
     left: 91.5%
   }
 }
 
 @media (max-width: 346px) {
-  i.fas.fa-paper-plane {
+  i.far.fa-paper-plane {
     left: 90.5%
   }
 }
 
 @media (max-width: 286px) {
-  i.fas.fa-paper-plane {
+  i.far.fa-paper-plane {
     left: 89.5%
   }
 }
