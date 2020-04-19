@@ -119,7 +119,8 @@ input:focus {
   max-width: 100%;
   background-color: #f0f0f0;
   overflow-y: auto;
-  height: 508px
+  height: 500px;
+  z-index: 1;
 }
 
 textarea {
@@ -135,12 +136,11 @@ textarea {
 }
 
 .text-area {
-  display: flex;
-  align-items: flex-end;
-  margin-top: auto;
   bottom: 4px;
+  left: 0;
   width: 100%;
   position: fixed;
+  z-index: 0;
 }
 
 textarea:focus {
