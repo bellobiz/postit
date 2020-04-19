@@ -173,6 +173,42 @@ i.far.fa-paper-plane {
   color: rgb(8, 122, 8);
 }
 
+@media (min-width: 1601px) {
+  textarea {
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 1600px) {
+  i.far.fa-paper-plane {
+    left: 94%;
+  }
+}
+
+@media (max-width: 1500px) {
+  i.far.fa-paper-plane {
+    left: 93.5%;
+  }
+}
+
+@media (max-width: 1400px) {
+  i.far.fa-paper-plane {
+    left: 93%;
+  }
+}
+
+@media (max-width: 1300px) {
+  i.far.fa-paper-plane {
+    left: 92.5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  i.far.fa-paper-plane {
+    left: 92%;
+  }
+}
+
 @media (max-width: 587px) {
   i.far.fa-paper-plane {
     left: 89%;
