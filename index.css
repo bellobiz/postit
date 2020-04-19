@@ -122,15 +122,6 @@ input:focus {
   height: 508px
 }
 
-/* @media (min-width: 576px) {
-  .col-lg-4 {
-    height: 620px;
-  }
-  .col-lg-8 {
-    height: 620px;
-  }
-} */
-
 textarea {
   width: 90%;
   height: 60px;
