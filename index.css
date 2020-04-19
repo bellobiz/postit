@@ -73,6 +73,7 @@ input:focus {
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 1020px;
 }
 
 .container {
@@ -96,8 +97,7 @@ input:focus {
 .col-lg-8 {
   position: relative;
   width: 100%;
-  
-  height: auto;
+  height: 545px;
 }
 
 .col-lg-4 {
@@ -114,7 +114,6 @@ input:focus {
   flex: 0 0 100%;
   max-width: 100%;
   background-color: #f0f0f0;
-  height: 545px;
   overflow-y: auto;
 }
 
@@ -141,8 +140,10 @@ textarea {
 
 .text-area {
   display: flex;
-  height: 100%;
   align-items: flex-end;
+  position: fixed; 
+  bottom: 30px;
+  width: 100%;
 }
 
 textarea:focus {
