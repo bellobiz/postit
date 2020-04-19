@@ -9,8 +9,10 @@ const navItem2 = document.querySelector('.nav-item2');
 const navItem3 = document.querySelector('.nav-item3');
 
 const openBar = () => {
+    close.style.msFlex = '0 0 33.333333%';
     close.style.flex = '0 0 33.333333%';
     close.style.maxWidth = '33.333333%';
+    chatSection.style.msFlex = '0 0 66.666667%';
     chatSection.style.flex = '0 0 66.666667%';
     chatSection.style.maxWidth = '66.666667%';
     cancel.style.color = '#a8a4a4';
@@ -21,6 +23,11 @@ const closeBar = () => {
     close.style.maxWidth = '';
     chatSection.style.flex = '';
     chatSection.style.maxWidth = '';
+    cancel.style.color = '#fff';
+}
+
+const altCloseBar = () => {
+    close.style.maxWidth = ''; 
     cancel.style.color = '#fff';
 }
 
@@ -52,7 +59,8 @@ const altCloseSearch = () => {
 }
 
 searchBar.addEventListener('click', openSearch);
-contactsBar.addEventListener('blur', closeSearch);
+contactsBar.addEventListener('blur', closeSearch)
+chatSection.addEventListener('click', altCloseBar);
 chatSection.addEventListener('click', altCloseSearch)
 cancel.addEventListener('click', openBar);
 group_navItem.addEventListener('click', closeBar);
