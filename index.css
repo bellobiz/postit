@@ -69,14 +69,6 @@ input:focus {
   outline-color: transparent;
 }
 
-.sticky-top {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1020px;
-}
-
 .container {
   width: 100%;
   padding-right: 15px;
