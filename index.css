@@ -160,6 +160,12 @@ textarea:focus {
   outline-color: transparent;
 }
 
+.github-icon {
+  position: fixed;
+  margin-top: 58px;
+  z-index: 2;
+}
+
 li {
   list-style-type: none;
   margin-top: 20px;
