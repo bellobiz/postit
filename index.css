@@ -70,6 +70,10 @@ input:focus {
   outline-color: transparent;
 }
 
+li.nav-item {
+  margin: auto;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
