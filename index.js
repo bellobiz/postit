@@ -10,9 +10,6 @@ const navItem1 = document.querySelector(".nav-item1");
 const navItem2 = document.querySelector(".nav-item2");
 const navItem3 = document.querySelector(".nav-item3");
 
-for (i = 0; i <= textArea.length; i++) {
-  textArea[0].style.width = "33.33333";
-}
 const openBar = () => {
   close.style.msFlex = "0 0 33.333333%";
   close.style.flex = "0 0 33.333333%";
@@ -80,9 +77,13 @@ const altCloseSearch = () => {
   contactsBar.style.marginLeft = "";
 };
 
-searchBar.addEventListener("click", openSearch);
-contactsBar.addEventListener("blur", closeSearch);
-chatSection.addEventListener("click", altCloseBar);
-chatSection.addEventListener("click", altCloseSearch);
-cancel.addEventListener("click", openBar);
-group_navItem.addEventListener("click", closeBar);
+const output = () => {
+  searchBar.addEventListener("click", openSearch);
+  contactsBar.addEventListener("blur", closeSearch);
+  chatSection.addEventListener("click", altCloseBar);
+  chatSection.addEventListener("click", altCloseSearch);
+  cancel.addEventListener("click", openBar);
+  group_navItem.addEventListener("click", closeBar);
+}
+
+output()
