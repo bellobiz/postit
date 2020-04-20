@@ -19,6 +19,7 @@ const openBar = () => {
     chatSection.style.maxWidth = '66.666667%';
     cancel.style.color = '#a8a4a4';
     textArea.style.width = '66.666667%';
+    textArea.style.marginLeft = '33.333333%';
     send.style.display = 'none'
 }
 
@@ -29,6 +30,7 @@ const closeBar = () => {
     chatSection.style.maxWidth = '';
     cancel.style.color = '#fff';
     textArea.style.width = '';
+    textArea.style.marginLeft = '';
     send.style.display = 'block'
 }
 
