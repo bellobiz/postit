@@ -120,7 +120,7 @@ li.nav-item {
   color: white;
   background-color: purple;
   height: 568px;
-  z-index: 5000;
+  z-index:8000;
   margin-top:59px;
 }
 
