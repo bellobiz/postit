@@ -2,7 +2,7 @@ const closeSideBar = document.querySelector("li.cancel");
 const sideBar = document.querySelector(".col-lg-4");
 const chatSection = document.querySelector(".col-lg-8");
 const textArea = document.querySelectorAll("textarea");
-const send = document.querySelector("i.far.fa-paper-plane");
+const sendIcon = document.querySelector("i.far.fa-paper-plane");
 const activeGroup = document.querySelector("a.active");
 const contactsSearchBarIcon = document.querySelector("#search-bar");
 const contactsSearchBar = document.querySelector("#contacts-bar");
@@ -22,7 +22,7 @@ const openBar = () => {
     textArea[0].style.width = "60%";
     textArea[0].style.marginLeft = "36.6666667%";
   }
-  send.style.display = "none";
+  sendIcon.style.display = "none";
 };
 
 const closeBar = () => {
@@ -35,8 +35,8 @@ const closeBar = () => {
     textArea[0].style.width = "";
     textArea[0].style.marginLeft = "";
   }
-  send.style.display = "";
-  send.style.left = "";
+  sendIcon.style.display = "";
+  sendIcon.style.left = "";
 };
 
 const altCloseBar = () => {
@@ -46,8 +46,8 @@ const altCloseBar = () => {
     textArea[0].style.width = "";
     textArea[0].style.marginLeft = "";
   }
-  send.style.display = "";
-  send.style.left = "";
+  sendIcon.style.display = "";
+  sendIcon.style.left = "";
 };
 
 const openSearch = () => {
