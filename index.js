@@ -1,7 +1,8 @@
 const group_navItem = document.querySelector("li.cancel");
 const close = document.querySelector(".col-lg-4");
 const chatSection = document.querySelector(".col-lg-8");
-const textArea =document.querySelector('.textarea');
+const textArea = document.querySelector('.textarea');
+const send = document.querySelector('.far.fa-paper-plane');
 const cancel = document.querySelector("a.active");
 const searchBar = document.querySelector("#search-bar")
 const contactsBar = document.querySelector('#contacts-bar');
@@ -19,7 +20,7 @@ const openBar = () => {
     cancel.style.color = '#a8a4a4';
     textArea.style.width = '66.666667%';
     textArea.style.marginLeft = '33.333333%';
-    textArea.style.left = '96%';
+    send.style.left = '96%'
 }
 
 const closeBar = () => {
@@ -30,7 +31,7 @@ const closeBar = () => {
     cancel.style.color = '#fff';
     textArea.style.width = '';
     textArea.style.marginLeft = '';
-    textArea.style.left = '';
+    send.style.left = ''
 }
 
 const altCloseBar = () => {
