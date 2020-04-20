@@ -57,7 +57,7 @@ const openSearch = () => {
   navItem2.style.display = "none";
   navItem3.style.display = "none";
   contactsBar.style.marginRight = "auto";
-};
+}
 
 const closeSearch = () => {
   searchBar.style.display = "";
@@ -66,7 +66,7 @@ const closeSearch = () => {
   navItem2.style.display = "";
   navItem3.style.display = "";
   contactsBar.style.marginLeft = "";
-};
+}
 
 const altCloseSearch = () => {
   searchBar.style.display = "";
@@ -75,11 +75,15 @@ const altCloseSearch = () => {
   navItem2.style.display = "";
   navItem3.style.display = "";
   contactsBar.style.marginLeft = "";
-};
+}
 
-searchBar.addEventListener("click", openSearch);
-contactsBar.addEventListener("blur", closeSearch);
-chatSection.addEventListener("click", altCloseBar);
-chatSection.addEventListener("click", altCloseSearch);
-cancel.addEventListener("click", openBar);
-group_navItem.addEventListener("click", closeBar);
+const displayDynamicElements = () => {
+  searchBar.addEventListener("click", openSearch);
+  contactsBar.addEventListener("blur", closeSearch);
+  chatSection.addEventListener("click", altCloseBar);
+  chatSection.addEventListener("click", altCloseSearch);
+  cancel.addEventListener("click", openBar);
+  group_navItem.addEventListener("click", closeBar);
+}
+
+displayDynamicElements()
