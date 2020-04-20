@@ -1,5 +1,5 @@
 const group_navItem = document.querySelector("li.cancel");
-const close = document.querySelector(".col-lg-4");
+const sideBar = document.querySelector(".col-lg-4");
 const chatSection = document.querySelector(".col-lg-8");
 const textArea = document.querySelectorAll("textarea");
 const send = document.querySelector("i.far.fa-paper-plane");
@@ -11,9 +11,9 @@ const navItem2 = document.querySelector(".nav-item2");
 const navItem3 = document.querySelector(".nav-item3");
 
 const openBar = () => {
-  close.style.msFlex = "0 0 33.333333%";
-  close.style.flex = "0 0 33.333333%";
-  close.style.maxWidth = "33.333333%";
+  sideBar.style.msFlex = "0 0 33.333333%";
+  sideBar.style.flex = "0 0 33.333333%";
+  sideBar.style.maxWidth = "33.333333%";
   chatSection.style.msFlex = "0 0 66.666667%";
   chatSection.style.flex = "0 0 66.666667%";
   chatSection.style.maxWidth = "66.666667%";
@@ -26,8 +26,8 @@ const openBar = () => {
 }
 
 const closeBar = () => {
-  close.style.flex = "";
-  close.style.maxWidth = "";
+  sideBar.style.flex = "";
+  sideBar.style.maxWidth = "";
   chatSection.style.flex = "";
   chatSection.style.maxWidth = "";
   cancel.style.color = "#fff";
@@ -40,7 +40,7 @@ const closeBar = () => {
 }
 
 const altCloseBar = () => {
-  close.style.maxWidth = "";
+  sideBar.style.maxWidth = "";
   cancel.style.color = "#fff";
   for (i = 0; i <= textArea.length; i++) {
     textArea[0].style.width = "";
