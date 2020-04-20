@@ -1,4 +1,4 @@
-const group_navItem = document.querySelector("li.cancel");
+const closeSideBar = document.querySelector("li.cancel");
 const sideBar = document.querySelector(".col-lg-4");
 const chatSection = document.querySelector(".col-lg-8");
 const textArea = document.querySelectorAll("textarea");
@@ -83,7 +83,7 @@ const displayDynamicElements = () => {
   chatSection.addEventListener("click", altCloseBar);
   chatSection.addEventListener("click", altCloseSearch);
   cancel.addEventListener("click", openBar);
-  group_navItem.addEventListener("click", closeBar);
+  closeSideBar.addEventListener("click", closeBar);
 }
 
 displayDynamicElements()
