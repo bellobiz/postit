@@ -38,6 +38,7 @@ const closeBar = () => {
     textArea[0].style.width = "";
     textArea[0].style.marginLeft = "";
   }
+  send.style.display = "";
 };
 
 const altCloseBar = () => {
@@ -47,6 +48,7 @@ const altCloseBar = () => {
     textArea[0].style.width = "";
     textArea[0].style.marginLeft = "";
   }
+  send.style.display = "";
 };
 
 const openSearch = () => {
