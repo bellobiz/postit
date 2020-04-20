@@ -1,6 +1,7 @@
 const group_navItem = document.querySelector("li.cancel");
 const close = document.querySelector(".col-lg-4");
 const chatSection = document.querySelector(".col-lg-8");
+const textArea =document.querySelector('.textarea');
 const cancel = document.querySelector("a.active");
 const searchBar = document.querySelector("#search-bar")
 const contactsBar = document.querySelector('#contacts-bar');
@@ -16,6 +17,7 @@ const openBar = () => {
     chatSection.style.flex = '0 0 66.666667%';
     chatSection.style.maxWidth = '66.666667%';
     cancel.style.color = '#a8a4a4';
+    textArea.style.width = '50%';
 }
 
 const closeBar = () => {
