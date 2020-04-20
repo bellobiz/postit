@@ -20,7 +20,7 @@ const openBar = () => {
     cancel.style.color = '#a8a4a4';
     textArea.style.width = '66.666667%';
     textArea.style.marginLeft = '33.333333%';
-    send.style.left = '96%'
+    send.style.left = '93%'
 }
 
 const closeBar = () => {
