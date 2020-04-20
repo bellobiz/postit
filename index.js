@@ -29,7 +29,7 @@ const closeBar = () => {
     chatSection.style.flex = '';
     chatSection.style.maxWidth = '';
     cancel.style.color = '#fff';
-    textArea.style.width = '';
+    textArea.style.width = '90%';
     send.style.marginLeft = '';
     send.style.marginRight = ''
 }
