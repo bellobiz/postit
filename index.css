@@ -120,7 +120,7 @@ li.nav-item {
   color: white;
   background-color: purple;
   height: 568px;
-  z-index: 1;
+  z-index: 30000;
   margin-top:59px;
 }
 
@@ -154,7 +154,7 @@ textarea {
   left: 0;
   width: 100%;
   position: fixed;
-  z-index: 0;
+  z-index: 20000;
 }
 
 textarea:focus {
