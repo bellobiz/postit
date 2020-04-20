@@ -133,7 +133,7 @@ li.nav-item {
   height: 500px;
 }
 
-textarea {
+textarea, .textarea {
   width: 90%;
   height: 60px;
   border: 1px solid #fff;
@@ -147,10 +147,6 @@ textarea {
   font-weight: 500;
   font-size: medium;
   overflow-y: auto;
-}
-
-.textarea {
-  width: 90%;
 }
 
 .text-area {
