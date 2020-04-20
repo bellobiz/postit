@@ -34,6 +34,10 @@ const closeBar = () => {
   chatSection.style.flex = "";
   chatSection.style.maxWidth = "";
   cancel.style.color = "#fff";
+  for (i = 0; i <= textArea.length; i++) {
+    textArea[0].style.width = "";
+    textArea[0].style.marginLeft = "";
+  }
 };
 
 const altCloseBar = () => {
