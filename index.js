@@ -17,7 +17,8 @@ const openBar = () => {
     chatSection.style.flex = '0 0 66.666667%';
     chatSection.style.maxWidth = '66.666667%';
     cancel.style.color = '#a8a4a4';
-    textArea.style.width = '50%';
+    textArea.style.width = '66.666667%';
+    textArea.style.marginLeft = '33.333333%';
 }
 
 const closeBar = () => {
