@@ -154,7 +154,7 @@ textarea {
   left: 0;
   width: 100%;
   position: fixed;
-  z-index: 5000;
+  z-index: 15000;
 }
 
 textarea:focus {
