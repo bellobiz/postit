@@ -25,7 +25,7 @@ const openBar = () => {
     textArea[0].style.width = "66.666667%";
     textArea[0].style.marginLeft = "33.333333%";
   }
-  send.style.left = "91%";
+  send.style.left = "92%";
 };
 
 const closeBar = () => {
