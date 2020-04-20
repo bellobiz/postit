@@ -25,7 +25,7 @@ const openBar = () => {
     textArea[0].style.width = "66.666667%";
     textArea[0].style.marginLeft = "33.333333%";
   }
-  send.style.display = "none";
+  send.style.left = "91%";
 };
 
 const closeBar = () => {
@@ -39,6 +39,7 @@ const closeBar = () => {
     textArea[0].style.marginLeft = "";
   }
   send.style.display = "";
+  send.style.left = "";
 };
 
 const altCloseBar = () => {
@@ -49,6 +50,7 @@ const altCloseBar = () => {
     textArea[0].style.marginLeft = "";
   }
   send.style.display = "";
+  send.style.left = "";
 };
 
 const openSearch = () => {
