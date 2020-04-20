@@ -1,9 +1,9 @@
-const closeSideBar = document.querySelector("li.cancel");
+const closeSideBar = document.querySelector("li.activeGroup");
 const sideBar = document.querySelector(".col-lg-4");
 const chatSection = document.querySelector(".col-lg-8");
 const textArea = document.querySelectorAll("textarea");
 const send = document.querySelector("i.far.fa-paper-plane");
-const cancel = document.querySelector("a.active");
+const activeGroup = document.querySelector("a.active");
 const searchBar = document.querySelector("#search-bar");
 const contactsBar = document.querySelector("#contacts-bar");
 const navItem1 = document.querySelector(".nav-item1");
@@ -17,7 +17,7 @@ const openBar = () => {
   chatSection.style.msFlex = "0 0 66.666667%";
   chatSection.style.flex = "0 0 66.666667%";
   chatSection.style.maxWidth = "66.666667%";
-  cancel.style.color = "#a8a4a4";
+  activeGroup.style.color = "#a8a4a4";
   for (i = 0; i <= textArea.length; i++) {
     textArea[0].style.width = "60%";
     textArea[0].style.marginLeft = "36.6666667%";
@@ -30,7 +30,7 @@ const closeBar = () => {
   sideBar.style.maxWidth = "";
   chatSection.style.flex = "";
   chatSection.style.maxWidth = "";
-  cancel.style.color = "#fff";
+  activeGroup.style.color = "#fff";
   for (i = 0; i <= textArea.length; i++) {
     textArea[0].style.width = "";
     textArea[0].style.marginLeft = "";
@@ -41,7 +41,7 @@ const closeBar = () => {
 
 const altCloseBar = () => {
   sideBar.style.maxWidth = "";
-  cancel.style.color = "#fff";
+  activeGroup.style.color = "#fff";
   for (i = 0; i <= textArea.length; i++) {
     textArea[0].style.width = "";
     textArea[0].style.marginLeft = "";
@@ -82,7 +82,7 @@ const displayDynamicElements = () => {
   contactsBar.addEventListener("blur", closeSearch);
   chatSection.addEventListener("click", altCloseBar);
   chatSection.addEventListener("click", altCloseSearch);
-  cancel.addEventListener("click", openBar);
+  activeGroup.addEventListener("click", openBar);
   closeSideBar.addEventListener("click", closeBar);
 }
 
