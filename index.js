@@ -11,16 +11,13 @@ const navItem2 = document.querySelector('.nav-item2');
 const navItem3 = document.querySelector('.nav-item3');
 
 const openBar = () => {
-    close.style.msFlex = '0 0 33.333333%';
     close.style.flex = '0 0 33.333333%';
     close.style.maxWidth = '33.333333%';
     chatSection.style.msFlex = '0 0 66.666667%';
     chatSection.style.flex = '0 0 66.666667%';
     chatSection.style.maxWidth = '66.666667%';
     cancel.style.color = '#a8a4a4';
-    textArea.style.width = '66.666667%';
     textArea.style.marginLeft = '33.333333%';
-    send.style.display = 'none'
 }
 
 const closeBar = () => {
@@ -29,9 +26,7 @@ const closeBar = () => {
     chatSection.style.flex = '';
     chatSection.style.maxWidth = '';
     cancel.style.color = '#fff';
-    textArea.style.width = '';
     textArea.style.marginLeft = '';
-    send.style.display = 'block'
 }
 
 const altCloseBar = () => {
