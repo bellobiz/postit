@@ -23,6 +23,11 @@ ul.nav {
   background-color: rgb(24, 24, 24);
 }
 
+h3 {
+  color: #fff; 
+  margin-left: 10px;
+}
+
 a {
   text-decoration: none;
   color: #fff;
