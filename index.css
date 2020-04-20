@@ -208,6 +208,24 @@ i.far.fa-paper-plane {
   }
 }
 
+@media (max-width: 900px) {
+  i.far.fa-paper-plane {
+    left: 91.5%;
+  }
+}
+
+@media (max-width: 800px) {
+  i.far.fa-paper-plane {
+    left: 91%;
+  }
+}
+
+@media (max-width: 700px) {
+  i.far.fa-paper-plane {
+    left: 90.5%;
+  }
+}
+
 @media (max-width: 640px) {
   i.far.fa-paper-plane {
     left: 90%;
