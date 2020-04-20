@@ -29,6 +29,7 @@ const closeBar = () => {
     chatSection.style.maxWidth = '';
     cancel.style.color = '#fff';
     textArea.style.width = '';
+    send.style.display = 'block'
 }
 
 const altCloseBar = () => {
