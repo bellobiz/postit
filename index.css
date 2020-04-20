@@ -149,6 +149,10 @@ textarea {
   overflow-y: auto;
 }
 
+.textarea {
+  width: 90%;
+}
+
 .text-area {
   bottom: 4px;
   left: 0;
