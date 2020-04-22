@@ -54,8 +54,10 @@ section textarea {
     font-size: medium;
     overflow-y: auto;
     width: 90%;
-    height: 320px;
+    height: 800px;
     margin: auto;
+    position: relative;
+    z-index: 10000000;
 }
 
 section {
