@@ -11,12 +11,10 @@ const navItem2 = document.querySelector(".nav-item2");
 const navItem3 = document.querySelector(".nav-item3");
 
 const openBar = () => {
-    sideBar.style.msFlex = "0 0 33.333333%";
     sideBar.style.flex = "0 0 33.333333%";
     sideBar.style.maxWidth = "33.333333%";
-    chatSection.style.msFlex = "0 0 66.666667%";
-    chatSection.style.flex = "0 0 66.666667%";
-    chatSection.style.maxWidth = "66.666667%";
+    chatSection.style.flex = "0 0 100%";
+    chatSection.style.maxWidth = "100%";
     activeGroup.style.color = "#a8a4a4";
     for (i = 0; i <= textArea.length; i++) {
         textArea[0].style.width = "60%";
@@ -41,6 +39,7 @@ const closeBar = () => {
 
 const altCloseBar = () => {
     sideBar.style.maxWidth = "";
+    sideBar.style.flex = "";
     activeGroup.style.color = "#fff";
     for (i = 0; i <= textArea.length; i++) {
         textArea[0].style.width = "";
