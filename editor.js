@@ -6,17 +6,13 @@ const textAreaSection = document.querySelectorAll('textarea.editor');
 const removeEditor = document.querySelector('span.material-icons');
 
 const showLightMode = () => {
-    for (i = 0; i <= textAreaSection.length; i++) {
-        textAreaSection[i].style.backgroundColor = '#fff';
-        textAreaSection[i].style.color = '#444';
-    }
+    textAreaSection[0].style.backgroundColor = '#fff';
+    textAreaSection[0].style.color = '#444';
 }
 
 const showDarkMode = () => {
-    for (i = 0; i <= textAreaSection.length; i++) {
-        textAreaSection[i].style.backgroundColor = '';
-        textAreaSection[i].style.color = '';
-    }
+    textAreaSection[0].style.backgroundColor = '';
+    textAreaSection[0].style.color = '';
 }
 
 const showEditor = () => {
