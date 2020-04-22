@@ -20,16 +20,13 @@ const showDarkMode = () => {
 }
 
 const showEditor = () => {
-    for (i = 0; i <= section.length; i++) {
-        section[i].style.display = 'block';
-        section[i].style.width = '';
-    }
+    section[0].style.display = 'block';
+    navItem.style.color = "#a8a4a4"
 }
 
 const delEditor = () => {
-    for (i = 0; i <= section.length; i++) {
-        section[i].style.display = '';
-    }
+    section[0].style.display = '';
+    navItem.style.color = "#fff"
 }
 
 const toggleEditor = () => {
