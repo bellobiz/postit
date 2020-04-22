@@ -111,9 +111,6 @@ li.nav-item {
 .col-lg-8 {
     position: relative;
     width: 100%;
-    min-height: 200px;
-    max-height: 1366px;
-    height: auto;
     overflow: auto;
 }
 
@@ -124,7 +121,9 @@ li.nav-item {
     color: white;
     background-color: purple;
     z-index: 8000;
-    margin-top: 59px;
+    height: 1200;
+    position: relative;
+    top: 60px
 }
 
 .col-lg-8 {
