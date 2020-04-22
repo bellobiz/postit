@@ -54,9 +54,8 @@ section textarea {
     font-size: medium;
     overflow-y: auto;
     width: 90%;
-    height: 500px;
+    height: 200px;
     margin: auto;
-    display: block;
 }
 
 section {
