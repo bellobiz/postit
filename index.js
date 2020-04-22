@@ -3,7 +3,7 @@ const sideBar = document.querySelector(".col-lg-4");
 const chatSection = document.querySelector(".col-lg-8");
 const textArea = document.querySelectorAll("textarea.textarea");
 const sendIcon = document.querySelector("i.far.fa-paper-plane");
-const activeGroup = document.querySelector("a.active");
+const activeGroup = document.querySelector(".nav-item2");
 const contactsSearchBarIcon = document.querySelector("#search-bar");
 const contactsSearchBar = document.querySelector("#contacts-bar");
 const navItem1 = document.querySelector(".nav-item1");
@@ -21,6 +21,7 @@ const openBar = () => {
         textArea[0].style.marginLeft = "36.6666667%";
     }
     sendIcon.style.display = "none";
+    closeSideBar.style.display = 'block';
 };
 
 const closeBar = () => {
@@ -35,6 +36,7 @@ const closeBar = () => {
     }
     sendIcon.style.display = "";
     sendIcon.style.left = "";
+    closeSideBar.style.display = 'none';
 };
 
 const altCloseBar = () => {
