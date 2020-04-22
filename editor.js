@@ -20,7 +20,6 @@ const showDarkMode = () => {
 }
 
 const showEditor = () => {
-    navItem.style.color = '#a8a4a4';
     for (i = 0; i <= section.length; i++) {
         section[i].style.display = 'block';
         section[i].style.width = '';
@@ -28,13 +27,16 @@ const showEditor = () => {
 }
 
 const delEditor = () => {
-    navItem.style.color = '';
     for (i = 0; i <= section.length; i++) {
         section[i].style.display = '';
     }
 }
 
-lightMode.addEventListener('click', showLightMode);
-darkMode.addEventListener('click', showDarkMode);
-navItem.addEventListener('click', showEditor);
-removeEditor.addEventListener('click', delEditor);
+const toggleEditor = () => {
+    lightMode.addEventListener('click', showLightMode);
+    darkMode.addEventListener('click', showDarkMode);
+    navItem.addEventListener('click', showEditor);
+    removeEditor.addEventListener('click', delEditor);
+}
+
+toggleEditor()
