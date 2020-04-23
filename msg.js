@@ -29,9 +29,10 @@ function newElement() {
   li.style.maxHeight = "200px";
   li.style.marginLeft = "40%";
   li.style.marginRight = "40px";
-  li.style.textAlign = "left";
-  li.style.paddingRight = "10px";
-  li.style.paddingLeft = "10px";
+  li.style.fontSize = "medium";
+  li.style.fontFamily = "'Roboto Condensed', 'Open Sans', sans-serif;";
+  li.style.textAlign = "right";
+  li.style.paddingRight = "50px";
   li.appendChild(t);
   if (inputValue === "") {
     alert("You must write something!");
