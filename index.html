@@ -29,8 +29,10 @@
     <title>PostIT</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="editor.css">
+    <link rel="stylesheet" href="msg.css">
     <script src="index.js" async></script>
     <script src="editor.js" async></script>
+    <script src="msg.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' async></script>
 </head>
 
@@ -82,19 +84,22 @@
                             Mode</button></div>
 
                     <div>
-                        <textarea class="editor" name="chatbox" id="editor" rows="60" cols="40" placeholder="" autocomplete="off" wrap="on"
+                        <textarea class="editor" rows="60" cols="40" placeholder="" autocomplete="off" wrap="on"
                         spellcheck="false"></textarea>
                     </div>
                 </section>
 
-                <form action="#.php" method="post">
-                    <div class="text-area">
-                        <i class="far fa-paper-plane"></i>
-                        <textarea class="textarea" name="chabox" id="message" cols="10" rows="10" autocomplete="on" wrap="soft"
+                <form action="" method="post">
+                    <div class="text-area header" id="myDIV">
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <i class="far fa-paper-plane addBtn" onclick="newElement()"></i>
+                        <textarea class="textarea" name="" id="myInput" cols="10" rows="10" autocomplete="on" wrap="soft"
                             placeholder="Message contact..." autofocus></textarea>
                     </div>
                 </form>
-
+                
             </div>
         </div>
     </div>
