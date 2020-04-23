@@ -29,8 +29,9 @@ function newElement() {
   li.style.maxHeight = "200px";
   li.style.marginLeft = "40%";
   li.style.marginRight = "40px";
-  li.style.textAlign = "right";
-  li.style.paddingRight = "50px";
+  li.style.textAlign = "left";
+  li.style.paddingRight = "10px";
+  li.style.paddingLeft = "10px";
   li.appendChild(t);
   if (inputValue === "") {
     alert("You must write something!");
