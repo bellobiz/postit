@@ -29,7 +29,6 @@ function newElement() {
   li.style.maxHeight = "200px";
   li.style.marginLeft = "40%";
   li.style.marginRight = "40px";
-  li.style.width = "60%";
   li.style.fontSize = "medium";
   li.style.fontFamily = "Roboto Condensed";
   li.style.textAlign = "right";
