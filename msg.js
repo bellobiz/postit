@@ -12,18 +12,27 @@ for (i = 0; i < myNodelist.length; i++) {
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
+  close[i].onclick = function () {
     var div = this.parentElement;
     div.style.display = "none";
-  }
+  };
 }
 
 function newElement() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("myInput").value;
   var t = document.createTextNode(inputValue);
+  li.style.backgroundColor = "#fff";
+  li.style.borderRadius = "4px";
+  li.style.padding = "5px";
+  li.style.overflow = "auto";
+  li.style.maxHeight = "200px";
+  li.style.marginLeft = "40%";
+  li.style.marginRight = "40px";
+  li.style.textAlign = "right";
+  li.style.paddingRight = "50px";
   li.appendChild(t);
-  if (inputValue === '') {
+  if (inputValue === "") {
     alert("You must write something!");
   } else {
     document.getElementById("myUL").appendChild(li);
@@ -40,6 +49,6 @@ function newElement() {
     close[i].onclick = function () {
       var div = this.parentElement;
       div.style.display = "none";
-    }
+    };
   }
 }
