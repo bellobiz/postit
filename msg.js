@@ -32,7 +32,7 @@ function newElement() {
   li.style.fontSize = "medium";
   li.style.fontFamily = "Roboto Condensed";
   li.style.textAlign = "right";
-  li.style.paddingRight = "50px";
+  li.style.paddingRight = "10px";
   li.appendChild(t);
   if (inputValue === "") {
     alert("You must write something!");
