@@ -1,11 +1,10 @@
 span.close {
-  position: relative;
-  display: block;
-  margin-left: 97%;
+    position: relative;
+    display: block;
+    margin-left: 97%;
 }
 
 #myUL li:hover {
-  -webkit-box-shadow: 2px 2px 8px 3px #ccc;
-  box-shadow: 2px 2px 8px 3px #ccc;
+    -webkit-box-shadow: 2px 2px 8px 3px #ccc;;
+    box-shadow: 2px 2px 8px 3px #ccc;
 }
-/*# sourceMappingURL=msg.css.map */
