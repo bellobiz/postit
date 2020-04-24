@@ -6,6 +6,21 @@ const textAreaSection = document.querySelectorAll('textarea.editor');
 const removeEditor = document.querySelector('span.material-icons');
 const chatBox = document.querySelectorAll("textarea.textarea");
 
+function myFunction() {
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+}
+
 const showLightMode = () => {
     textAreaSection[0].style.backgroundColor = '#fff';
     textAreaSection[0].style.color = '#444';
