@@ -47,6 +47,60 @@ section {
   z-index: 1000000;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  left: 40%;
+  top: 450px;
+  text-align: center;
+}
+
+@media (max-width: 320px) {
+  .tooltip {
+    top: 430px;
+  }
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.copy {
+  border-radius: 4px;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
+
 section textarea {
   background-image: url("editorruler.png");
   background-color: #333;
