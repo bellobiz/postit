@@ -1,32 +1,30 @@
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
+const myNodelist = document.getElementsByTagName("LI");
+let i;
 for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
+  const span = document.createElement("SPAN");
+  const txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
   myNodelist[i].appendChild(span);
 }
 
-var close = document.getElementsByClassName("close");
-var i;
+const close = document.getElementsByClassName("close");
 for (i = 0; i < close.length; i++) {
-  close[i].onclick = function () {
-    var div = this.parentElement;
+  close[i].onclick = () => {
+    const div = this.parentElement;
     div.style.display = "none";
   };
 }
 
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
+const newElement = () => {
+  const li = document.createElement("li");
+  const inputValue = document.getElementById("myInput").value;
+  const t = document.createTextNode(inputValue);
   li.style.backgroundColor = "#fff";
   li.style.borderRadius = "4px";
   li.style.padding = "5px";
   li.style.overflow = "auto";
-  li.style.maxHeight = "200px";
+  li.style.maxHeight = "300px";
   li.style.marginLeft = "40%";
   li.style.marginRight = "40px";
   li.style.fontSize = "medium";
@@ -39,15 +37,15 @@ function newElement() {
   }
   document.getElementById("myInput").value = "";
 
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
+  const span = document.createElement("SPAN");
+  const txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
   li.appendChild(span);
 
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function () {
-      var div = this.parentElement;
+      const div = this.parentElement;
       div.style.display = "none";
     };
   }
