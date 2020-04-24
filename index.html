@@ -78,15 +78,21 @@
                 <div class="github-icon">
                     <a href="https://github.com" target="_blank"><i class='github fab fa-github'></i></a>
                 </div>
-            
+                
                 <section>
                     <li><span class="material-icons">cancel</i></li>
                     <div class="button"><button class="light-mode">Light Mode</button><button class="dark-mode">Dark
                             Mode</button></div>
 
                     <div>
-                        <textarea class="editor" rows="60" cols="40" placeholder="" autocomplete="off" wrap="on"
-                        spellcheck="false"></textarea>
+                        <textarea class="editor" rows="60" cols="40"  id="myInput" value="Type Something" placeholder="" autocomplete="off" wrap="on"
+                        spellcheck="false"><button onclick="myFunction()">Copy text</button></textarea>
+                        <div class="tooltip">
+                            <button onclick="myFunction()" onmouseout="outFunc()" class="copy">
+                                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                                Copy text
+                                </button>
+                        </div>
                     </div>
                 </section>
 
