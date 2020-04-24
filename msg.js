@@ -44,7 +44,7 @@ const newElement = () => {
   li.appendChild(span);
 
   for (i = 0; i < close.length; i++) {
-    close[i].onclick = function () {
+    close[i].onclick = () => {
       const div = this.parentElement;
       div.style.display = "none";
     };
