@@ -38,7 +38,7 @@ const closeBar = () => {
     sendIcon.style.display = "";
     sendIcon.style.left = "";
     closeSideBar.style.display = 'none';
-    closeIcon.style.displat = 'none';
+    closeIcon.style.display = 'none';
 };
 
 const altCloseBar = () => {
