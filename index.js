@@ -1,5 +1,4 @@
 const closeSideBar = document.querySelector("li.cancel");
-const closeIcon = document.querySelector("i.material-icons");
 const sideBar = document.querySelector(".col-lg-4");
 const chatSection = document.querySelector(".col-lg-8");
 const textArea = document.querySelectorAll("textarea.textarea");
@@ -17,7 +16,7 @@ const openBar = () => {
     chatSection.style.flex = "0 0 100%";
     chatSection.style.maxWidth = "100%";
     activeGroup.style.color = "#a8a4a4";
-    for (let i = 0; i <= textArea.length; i++) {
+    for (i = 0; i <= textArea.length; i++) {
         textArea[0].style.width = "60%";
         textArea[0].style.marginLeft = "36.6666667%";
     }
@@ -31,21 +30,20 @@ const closeBar = () => {
     chatSection.style.flex = "";
     chatSection.style.maxWidth = "";
     activeGroup.style.color = "#fff";
-    for (let i = 0; i <= textArea.length; i++) {
+    for (i = 0; i <= textArea.length; i++) {
         textArea[0].style.width = "";
         textArea[0].style.marginLeft = "";
     }
     sendIcon.style.display = "";
     sendIcon.style.left = "";
     closeSideBar.style.display = 'none';
-    closeIcon.style.display = 'none';
 };
 
 const altCloseBar = () => {
     sideBar.style.maxWidth = "";
     sideBar.style.flex = "";
     activeGroup.style.color = "#fff";
-    for (let i = 0; i <= textArea.length; i++) {
+    for (i = 0; i <= textArea.length; i++) {
         textArea[0].style.width = "";
         textArea[0].style.marginLeft = "";
     }
