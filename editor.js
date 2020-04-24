@@ -21,6 +21,7 @@ function outFunc() {
     tooltip.innerHTML = "Copy to clipboard";
 }
 
+
 const showLightMode = () => {
     textAreaSection[0].style.backgroundColor = '#fff';
     textAreaSection[0].style.color = '#444';
