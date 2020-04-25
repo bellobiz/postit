@@ -7,7 +7,7 @@ const removeEditor = document.querySelector('span.material-icons');
 const chatBox = document.querySelectorAll("textarea.textarea");
 
 function myFunction() {
-    var copyText = document.getElementById("myInput");
+    var copyText = document.getElementById("my_Input");
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
@@ -20,7 +20,6 @@ function outFunc() {
     var tooltip = document.getElementById("myTooltip");
     tooltip.innerHTML = "Copy to clipboard";
 }
-
 
 const showLightMode = () => {
     textAreaSection[0].style.backgroundColor = '#fff';
