@@ -72,7 +72,7 @@
             </div>
           </ul>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8" onmouseover="stop_scroll_down();" >
           <div class="github-icon">
             <a href="https://github.com" target="_blank"><i class='github fab fa-github'></i></a>
           </div>
@@ -99,27 +99,30 @@
         </div>
       </div>
     </div>
-    <div style="position: relative; top: -60px; display: none;">
-      <button onclick="start_scroll_down();">Start Scroll</button>
-      <button onclick="stop_scroll_down();">Stop Scroll</button>
+    <div style="position: relative; top: -60px;">
+      <button>Start Scroll</button>
+      <button>Stop Scroll</button>
     </div>
     <footer>
       <form action="" method="post" id="top">
         <div class="text-area header" id="myDIV">
           <i class="far fa-paper-plane addBtn" onclick="newElement()"></i>
-          <textarea class="textarea" name="" id="myInput" cols="10" rows="10" autocomplete="on" wrap="soft" placeholder="Message contact..." autofocus></textarea>
+          <textarea onfocus="start_scroll_down();" class="textarea" name="" id="myInput" cols="10" rows="10" autocomplete="on" wrap="soft" placeholder="Message contact..." autofocus></textarea>
         </div>
       </form>
     </footer>
 
     <script>
       function start_scroll_down() {
-        scroll = setInterval(function() {
-          window.scrollBy(0, 1000);
-          console.log('start');
-        }, 1500);
+          window.scrollBy(0, 100);
+          console.log('start')
       }
-      start_scroll_down()
+
+      function stop_scroll_down() {
+         clearInterval(scroll);
+         console.log('stop');
+      }
+      
     </script>
 
   </body>
