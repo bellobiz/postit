@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="msg.css">
     <script src="editor.js" async></script>
     <script src="sidebar.js" async></script>
-    <script src="index.js"></script>
+    <script src="index.js" async></script>
     <script src="msg.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' async></script>
   </head>
@@ -108,25 +108,6 @@
         </div>
       </form>
     </footer>
-
-    <script>
-      function start_scroll_down() {
-        window.scrollBy(0, 1000000);
-      }
-
-      function stop_scroll_down() {
-        clearInterval(scroll);
-      }
-
-      var input = document.getElementById("myInput");
-      input.addEventListener("keyup", function(event) {
-        if (event.keyCode === 18) {
-          event.preventDefault();
-          document.getElementById("myBtn").click();
-        }
-      });
-
-    </script>
 
   </body>
 
