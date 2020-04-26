@@ -12,4 +12,8 @@ input.addEventListener("keyup", function(event) {
     event.preventDefault();
     document.getElementById("myBtn").click();
   }
+  if (event.keyCode === 179) {
+    event.preventDefault();
+    document.getElementById("myBtn").click();
+  }
 });
