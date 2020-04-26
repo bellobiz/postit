@@ -1,53 +1,15 @@
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
+function start_scroll_down() {
+  window.scrollBy(0, 1000000);
 }
 
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function () {
-    var div = this.parentElement;
-    div.style.display = "none";
-  };
+function stop_scroll_down() {
+  clearInterval(scroll);
 }
 
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("my_Input").value;
-  var t = document.createTextNode(inputValue);
-  li.style.backgroundColor = "#fff";
-  li.style.borderRadius = "4px";
-  li.style.padding = "5px";
-  li.style.overflow = "auto";
-  li.style.maxHeight = "300px";
-  li.style.marginLeft = "40%";
-  li.style.marginRight = "40px";
-  li.style.fontSize = "medium";
-  li.style.fontFamily = "Roboto Condensed";
-  li.appendChild(t);
-  if (inputValue === "") {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL").appendChild(li);
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 18) {
+    event.preventDefault();
+    document.getElementById("myBtn").click();
   }
-  document.getElementById("myInput").value = "";
-
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function () {
-      var div = this.parentElement;
-      div.style.display = "none";
-    };
-  }
-}
+});
