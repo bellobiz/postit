@@ -103,7 +103,7 @@
     <footer>
       <form action="" method="post" id="top">
         <div class="text-area header" id="myDIV">
-          <i class="far fa-paper-plane addBtn" onclick="newElement()" onmousedown="start_scroll_down();"></i>
+          <i class="far fa-paper-plane addBtn" onclick="newElement()"; onmousemove ="start_scroll_down()"; onmousedown="start_scroll_down();" onmouseover="start_scroll_down();"></i>
           <textarea onfocus="start_scroll_down();" class="textarea" name="" id="myInput" cols="10" rows="10" autocomplete="on" wrap="soft" placeholder="Message contact..." autofocus></textarea>
         </div>
       </form>
@@ -111,13 +111,11 @@
 
     <script>
       function start_scroll_down() {
-          window.scrollBy(0, 1000);
-          console.log('start')
+          window.scrollBy(0, 1000000);
       }
 
       function stop_scroll_down() {
          clearInterval(scroll);
-         console.log('stop');
       }
       
     </script>
