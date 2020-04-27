@@ -142,6 +142,14 @@ li.nav-item {
   box-sizing: border-box;
 }
 
+.col-lg-12 {
+  width: 100%;
+  /* -ms-flex: 0 0 100%;
+  -webkit-box-flex: 100%; */
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 #myUL {
   margin-top: 65px;
 }
