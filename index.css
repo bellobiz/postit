@@ -144,8 +144,8 @@ li.nav-item {
 
 .col-lg-12 {
   width: 100%;
-  /* -ms-flex: 0 0 100%;
-  -webkit-box-flex: 100%; */
+  -ms-flex: 0 0 100%;
+  -webkit-box-flex: 100%;
   flex: 0 0 100%;
   max-width: 100%;
 }
