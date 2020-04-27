@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server --output-public-path=/build/"
   },
   "author": "Bello Osagie Noah",
   "license": "ISC",
@@ -16,5 +17,8 @@
     "webpack": "^2.1.0-beta.22",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "package-lock.json": "^1.0.0"
   }
 }
