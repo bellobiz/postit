@@ -50,7 +50,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #c4aaaa;
+    color: #000;
     cursor: pointer;
     transform: scale(1.2);
 }
@@ -60,7 +60,7 @@ nav a:first-child {
 }
 
 nav a.active {
-    color: #c4aaaa;
+    color: #000;
 }
 
 .rightbox {
