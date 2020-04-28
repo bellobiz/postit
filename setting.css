@@ -35,7 +35,7 @@ i.icon.material-icons {
     position: absolute;
     width: 15%;
     height: 110%;
-    background: linear-gradient(to right, #d52ebf, #f7f5f1);
+    background: #e409c7;
     box-shadow: 3px 3px 10px rgba(119, 119, 119, .5);
     border: .1em solid #fff;
 }
