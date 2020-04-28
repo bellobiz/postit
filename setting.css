@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto");
 
 #body {
-    background-image: url('./setting.png');
+    /* background: url('./setting.png'); */
     display: none;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: fixed;
     width: 100%;
+    position: fixed;
+    /* overflow-x: hidden; */
+    margin: auto;
+    margin-top: 50px;
 }
 
 i.icon.material-icons {
