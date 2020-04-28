@@ -6,10 +6,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
 }
 
 i.icon.material-icons {
     margin-left: -97px;
+    cursor: pointer;
 }
 
 .container-setting {
