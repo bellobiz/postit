@@ -1,10 +1,14 @@
 const nav_Item = document.querySelector("#nav-item3");
+const nav__1 = document.querySelector("#nav-item1");
+const nav__2 = document.querySelector("#nav-item2");
+// const editor__mode = document.querySelectorAll("#editor-area");
 const settingSection = document.querySelector('#body');
 const cancelSideBarSection = document.querySelector('li.cancel');
 const remove_Setting = document.querySelector('i.icon.material-icons');
 const tabBtn = document.querySelectorAll('.tab');
 const tab = document.querySelectorAll('.tabShow');
 const form = document.querySelectorAll('form');
+const side_bar = document.querySelector('.col-lg-4');
 const sendFormButton = document.querySelector('.far.fa-paper-plane');
 const RemoveGithubIcon = document.querySelector('.github.fab.fa-github');
 
@@ -28,6 +32,10 @@ const showSetting = () => {
     RemoveGithubIcon.style.display = 'none';
     cancelSideBarSection.style.display = 'none';
     remove_Setting.style.color = '#000';
+    side_bar.style.display = 'none';
+    editor__mode.style.display = 'none';
+    nav__2.style.cursor = 'not-allowed';
+    // nav__1.style.cursor = 'not-allowed';
 }
 
 const removeSetting = () => {
