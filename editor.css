@@ -38,6 +38,7 @@ button {
   position: relative;
   top: 60px;
   left: 90%;
+  color: #fff;
 }
 
 section {
@@ -126,5 +127,3 @@ section textarea {
 section textarea:focus {
   outline-color: transparent;
 }
-
-/*# sourceMappingURL=editor.css.map */
