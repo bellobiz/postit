@@ -26,10 +26,6 @@ const showSetting = () => {
     sendFormButton.style.display = 'none';
     RemoveGithubIcon.style.display = 'none';
     cancelSideBarSection.style.display = 'none';
-    remove_Setting.style.color = '#000';
-    nav__2.style.cursor = 'not-allowed';
-    nav__1.style.cursor = 'not-allowed';
-    textarea_[0].style.marginLeft = ''
 }
 
 const removeSetting = () => {
@@ -39,7 +35,6 @@ const removeSetting = () => {
     RemoveGithubIcon.style.display = '';
     cancelSideBarSection.style.display = '';
     nav__2.style.cursor = '';
-    nav__1.style.cursor = 'not-allowed';
 }
 
 const toggleSetting = () => {
