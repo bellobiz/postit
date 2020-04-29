@@ -8,7 +8,8 @@ const activeGroup = document.querySelector(".nav-item2");
 const contactsSearchBarIcon = document.querySelector("#search-bar");
 const contactsSearchBar = document.querySelector("#contacts-bar");
 const navItem1 = document.querySelector(".nav-item1");
-const navItem2 = document.querySelector(".nav-item2");
+const navItem2 = document.querySelector("#nav-item2");
+const nav2 = document.querySelector(".nav-item2");
 const navItem3 = document.querySelector(".nav-item3");
 
 const openBar = () => {
@@ -23,6 +24,7 @@ const openBar = () => {
     }
     sendIcon.style.display = "none";
     closeSideBar.style.display = 'block';
+    closeIcon.style.display = 'block';
 };
 
 const closeBar = () => {
@@ -66,7 +68,7 @@ const closeSearch = () => {
     contactsSearchBarIcon.style.display = "";
     contactsSearchBar.style.display = "";
     navItem1.style.display = "";
-    navItem2.style.display = "";
+    nav2.style.display = "";
     navItem3.style.display = "";
     contactsSearchBar.style.marginLeft = "";
 };
@@ -75,7 +77,7 @@ const altCloseSearch = () => {
     contactsSearchBarIcon.style.display = "";
     contactsSearchBar.style.display = "";
     navItem1.style.display = "";
-    navItem2.style.display = "";
+    nav2.style.display = "";
     navItem3.style.display = "";
     contactsSearchBar.style.marginLeft = "";
 };
