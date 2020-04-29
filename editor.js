@@ -2,6 +2,7 @@ const lightMode = document.querySelector('.light-mode');
 const darkMode = document.querySelector('.dark-mode');
 const section = document.querySelectorAll('section');
 const navItem = document.querySelector(".nav-item1");
+const nav3 = document.querySelector(".nav-item3");
 const textAreaSection = document.querySelectorAll('textarea.editor');
 const removeEditor = document.querySelector('span.material-icons');
 const chatBox = document.querySelectorAll("textarea.textarea");
@@ -37,6 +38,7 @@ const showEditor = () => {
     navItem.style.color = "#a8a4a4";
     chatBox[0].style.display = '';
     bodySetting.style.display = '';
+    nav3.style.color = "#fff";
 }
 
 const delEditor = () => {
