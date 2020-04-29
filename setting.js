@@ -49,6 +49,10 @@ const removeSetting = () => {
     sendFormButton.style.display = '';
     RemoveGithubIcon.style.display = '';
     cancelSideBarSection.style.display = '';
+    side_bar.style.display = '';
+    // editor__mode.style.display = 'none';
+    nav__2.style.cursor = '';
+    // nav__1.style.cursor = 'not-allowed';
 }
 
 const toggleSetting = () => {
