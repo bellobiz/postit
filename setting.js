@@ -1,5 +1,6 @@
 const nav_Item = document.querySelector("#nav-item3");
 const settingSection = document.querySelector('#body');
+const cancelSideBarSection = document.querySelector('li.cancel');
 const remove_Setting = document.querySelector('i.icon.material-icons');
 const tabBtn = document.querySelectorAll('.tab');
 const tab = document.querySelectorAll('.tabShow');
@@ -21,6 +22,8 @@ const showSetting = () => {
     form[0].style.display = 'none';
     sendFormButton.style.display = 'none';
     RemoveGithubIcon.style.display = 'none';
+    cancelSideBarSection.style.display = 'none';
+    remove_Setting.style.color = '#000';
 }
 
 const removeSetting = () => {
@@ -29,6 +32,7 @@ const removeSetting = () => {
     form[0].style.display = 'block';
     sendFormButton.style.display = 'block';
     RemoveGithubIcon.style.display = 'block';
+    cancelSideBarSection.style.display = '';
 }
 
 const toggleSetting = () => {
