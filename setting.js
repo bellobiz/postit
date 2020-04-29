@@ -19,7 +19,11 @@ tabs(0);
 const showSetting = () => {
     settingSection.style.display = 'block';
     nav_Item.style.color = "#a8a4a4";
-    form[0].style.display = 'none';
+    for (let i = 0; i <= textArea.length; i++) {
+        textArea[0].style.width = "60%";
+        textArea[0].style.marginLeft = "36.6666667%";
+        form[0].style.display = 'none';
+    }
     sendFormButton.style.display = 'none';
     RemoveGithubIcon.style.display = 'none';
     cancelSideBarSection.style.display = 'none';
@@ -29,9 +33,13 @@ const showSetting = () => {
 const removeSetting = () => {
     settingSection.style.display = '';
     nav_Item.style.color = "#fff";
-    form[0].style.display = 'block';
-    sendFormButton.style.display = 'block';
-    RemoveGithubIcon.style.display = 'block';
+    for (let i = 0; i <= textArea.length; i++) {
+        textArea[i].style.width = "";
+        textArea[i].style.marginLeft = "";
+        form[i].style.display = '';
+    }
+    sendFormButton.style.display = '';
+    RemoveGithubIcon.style.display = '';
     cancelSideBarSection.style.display = '';
 }
 
