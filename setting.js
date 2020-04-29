@@ -26,6 +26,7 @@ const showSetting = () => {
     sendFormButton.style.display = 'none';
     RemoveGithubIcon.style.display = 'none';
     cancelSideBarSection.style.display = 'none';
+    textarea_[0].style.display = 'none';
 }
 
 const removeSetting = () => {
@@ -35,6 +36,7 @@ const removeSetting = () => {
     RemoveGithubIcon.style.display = '';
     cancelSideBarSection.style.display = '';
     nav__2.style.cursor = '';
+    textarea_[0].style.display = '';
 }
 
 const toggleSetting = () => {
