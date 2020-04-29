@@ -2,11 +2,15 @@ const lightMode = document.querySelector('.light-mode');
 const darkMode = document.querySelector('.dark-mode');
 const section = document.querySelectorAll('section');
 const navItem = document.querySelector(".nav-item1");
+const nav_2 = document.querySelector("#nav-item2");
+const sideBarCancel = document.querySelector("i.material-icons");
 const nav3 = document.querySelector(".nav-item3");
 const textAreaSection = document.querySelectorAll('textarea.editor');
 const removeEditor = document.querySelector('span.material-icons');
 const chatBox = document.querySelectorAll("textarea.textarea");
 const bodySetting = document.querySelector('#body');
+const myGithubPage = document.querySelector('.github-icon');
+const sideBarSectionMenu = document.querySelector('.col-lg-4');
 
 const myFunction = () => {
     const copyText = document.getElementById("my_Input");
@@ -39,6 +43,9 @@ const showEditor = () => {
     chatBox[0].style.display = '';
     bodySetting.style.display = '';
     nav3.style.color = "#fff";
+    sideBarSectionMenu.style.display = 'none';
+    sideBarCancel.style.display = 'block';
+    nav_2.style.color = '#fff';
 }
 
 const delEditor = () => {
@@ -46,6 +53,10 @@ const delEditor = () => {
     navItem.style.color = "#fff";
     chatBox[0].style.display = 'block';
     bodySetting.style.display = 'none';
+    myGithubPage.style.display = '';
+    sideBarSectionMenu.style.display = '';
+    sideBarCancel.style.display = 'none';
+    nav_2.style.color = '';
 }
 
 const toggleEditor = () => {
