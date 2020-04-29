@@ -36,6 +36,7 @@ h3 {
   margin-left: 10px;
   color: #fff;
   font-family: 'Roboto Condensed';
+  cursor: not-allowed;
 }
 
 a {
@@ -71,6 +72,7 @@ i#search-bar {
   color: #fff;
   margin-left: auto;
   margin-top: 23px;
+  cursor: pointer;
 }
 
 input[type="search"]#contacts-bar {
