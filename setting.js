@@ -33,7 +33,7 @@ const showSetting = () => {
     cancelSideBarSection.style.display = 'none';
     remove_Setting.style.color = '#000';
     side_bar.style.display = 'none';
-    editor__mode.style.display = 'none';
+    // editor__mode.style.display = 'none';
     nav__2.style.cursor = 'not-allowed';
     // nav__1.style.cursor = 'not-allowed';
 }
@@ -42,9 +42,9 @@ const removeSetting = () => {
     settingSection.style.display = '';
     nav_Item.style.color = "#fff";
     for (let i = 0; i <= textArea.length; i++) {
-        textArea[i].style.width = "";
-        textArea[i].style.marginLeft = "";
-        form[i].style.display = '';
+        textArea[0].style.width = "";
+        textArea[0].style.marginLeft = "";
+        form[0].style.display = '';
     }
     sendFormButton.style.display = '';
     RemoveGithubIcon.style.display = '';
