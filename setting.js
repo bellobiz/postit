@@ -27,11 +27,9 @@ const showSetting = () => {
     RemoveGithubIcon.style.display = 'none';
     cancelSideBarSection.style.display = 'none';
     remove_Setting.style.color = '#000';
-    side_bar.style.display = 'none';
-    side_bar.style.width = '0px';
     nav__2.style.cursor = 'not-allowed';
     nav__1.style.cursor = 'not-allowed';
-    textarea_[0].style.marginLeft = '0%'
+    textarea_[0].style.marginLeft = ''
 }
 
 const removeSetting = () => {
@@ -40,7 +38,6 @@ const removeSetting = () => {
     sendFormButton.style.display = '';
     RemoveGithubIcon.style.display = '';
     cancelSideBarSection.style.display = '';
-    side_bar.style.display = '';
     nav__2.style.cursor = '';
     nav__1.style.cursor = 'not-allowed';
 }
