@@ -8,9 +8,9 @@ const remove_Setting = document.querySelector('i.icon.material-icons');
 const tabBtn = document.querySelectorAll('.tab');
 const tab = document.querySelectorAll('.tabShow');
 const form = document.querySelectorAll('form');
+const my_GithubPage = document.querySelector('.github-icon');
 const side_bar = document.querySelector('.col-lg-4');
 const sendFormButton = document.querySelector('.far.fa-paper-plane');
-const RemoveGithubIcon = document.querySelector('.github.fab.fa-github');
 
 const tabs = panelIndex => {
     tab.forEach(node => {
@@ -24,7 +24,6 @@ const showSetting = () => {
     settingSection.style.display = 'block';
     nav_Item.style.color = "#a8a4a4";
     sendFormButton.style.display = 'none';
-    RemoveGithubIcon.style.display = 'none';
     cancelSideBarSection.style.display = 'none';
     textarea_[0].style.display = 'none';
 }
@@ -33,7 +32,6 @@ const removeSetting = () => {
     settingSection.style.display = '';
     nav_Item.style.color = "#fff";
     sendFormButton.style.display = '';
-    RemoveGithubIcon.style.display = '';
     cancelSideBarSection.style.display = '';
     nav__2.style.cursor = '';
     textarea_[0].style.display = '';
