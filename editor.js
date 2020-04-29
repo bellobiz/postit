@@ -40,7 +40,7 @@ const showDarkMode = () => {
 const showEditor = () => {
     section[0].style.display = 'block';
     navItem.style.color = "#a8a4a4";
-    chatBox[0].style.display = '';
+    chatBox[0].style.display = 'block';
     bodySetting.style.display = '';
     nav3.style.color = "#fff";
     sideBarSectionMenu.style.display = 'none';
