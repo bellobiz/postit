@@ -1,53 +1,232 @@
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
+<!DOCTYPE html>
+<html lang="en">
 
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function () {
-    var div = this.parentElement;
-    div.style.display = "none";
-  };
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="postit, github postit, social media, communication platform, bello osagie, bello osagie noah" />
+  <meta name="og:title" content="PostIt" />
+  <meta property="og:type" content="website, app">
+  <meta name="description"
+    content="A simple, light weight communication platform for web developers made by Bello Osagie" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="belloosagienoah">
+  <meta name="author" content="Bello Osagie, ts.learndev@gmail.com">
+  <meta name="designer" content="Bello Osagie Noah">
+  <meta name="owner" content="Bello Osagie Noah">
+  <meta name="twitter:creator" content="belloosagienoah">
+  <meta property="og:url" content="https://belloosagienoah.github.io/postit/">
+  <meta property="og:image" content="https://belloosagienoah.github.io/postit/bello.jpg">
+  <meta property="og:image" content="https://belloosagienoah.github.io/postit/bello.jpg">
+  <meta property="og:image:secure_url" content="https://belloosagienoah.github.io/postit/">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800|Roboto+Condensed:400,700&display=swap"
+    rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="icon" type="image/png" href="https://belloosagie-ecommence--osagienoah1.repl.co/me.png" />
+  <title>PostIT</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="editor.css">
+  <link rel="stylesheet" href="./setting.css">
+  <link rel="stylesheet" href="msg.css">
+  <script src="./index.js" async></script>
+  <script src="./editor.js" async></script>
+  <script src="./msg.js"></script>
+  <script src="./build/msg.bundle.js"></script>
+</head>
 
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
-  li.style.backgroundColor = "#fff";
-  li.style.borderRadius = "4px";
-  li.style.padding = "5px";
-  li.style.overflow = "auto";
-  li.style.maxHeight = "300px";
-  li.style.marginLeft = "40%";
-  li.style.marginRight = "40px";
-  li.style.fontSize = "medium";
-  li.style.fontFamily = "Roboto Condensed";
-  li.appendChild(t);
-  if (inputValue === "") {
-    alert("You must write something!\n\n1. Windows/Linux\nFirefox/Opera - Alt + Shift + S\n2. Mac\nFirefox/Opera - Control + Alt + S");
-  } else {
-    document.getElementById("myUL").appendChild(li);
-  }
-  document.getElementById("myInput").value = "";
+<body onclick="start_scroll_down()">
 
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
+  <header>
+    <nav>
+      <div class="fixed-top">
+        <ul class="nav">
+          <h3>PostIt</h3>
+          <i class='fas fa-search' id="search-bar"></i>
+          <input type="search" name="search-bar" id="contacts-bar" placeholder="Search">
+          <li class="nav-item nav-item1 active" id="nav-item1">Editor</li>
+          <li class="nav-item  nav-item2 active" id="nav-item2">Group</li>
+          <li class="nav-item nav-item3 active" id="nav-item3">Setting</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function () {
-      var div = this.parentElement;
-      div.style.display = "none";
-    };
-  }
-}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <ul>
+          <li class="cancel"><i class="material-icons" style="color: #fff;">cancel</i></li>
+          <li><input type="search" name="search-bar" id="contacts" placeholder="Search"></li>
+          <li style="margin-left: -15px">Contacts</li>
+          <div style="text-align: center;">
+            <li class="contact"><img src="bello.jpg" alt="Adams profile pic"></li>
+            <div class="caption">Adams</div>
+            <li class="contact"><img src="bello.jpg" alt="Bello profile pic"></li>
+            <div class="caption">Bello</div>
+            <li class="contact"><img src="bello.jpg" alt="Peter  profile pic"></li>
+            <div class="caption">Peter</div>
+            <li class="contact"><img src="bello.jpg" alt="John Profile pic"></li>
+            <div class="caption">John</div>
+            <li class="contact"><img src="bello.jpg" alt="Michael Profile pic"></li>
+            <div class="caption">Michael</div>
+          </div>
+        </ul>
+      </div>
+      <div class="col-lg-8" onmouseover="stop_scroll_down();">
+        <div class="github-icon">
+          <a href="https://github.com" target="_blank"><i class='github fab fa-github'></i></a>
+        </div>
+
+        <div id="body">
+          <div class="container-setting">
+            <div class="leftbox">
+              <i class="icon material-icons" style="color: #000">cancel</i>
+              <nav>
+                <a onclick="tabs(0)" class="tab active">
+                  <i class="fas fa-user"></i>
+                </a>
+                <a onclick="tabs(1)" class="tab">
+                  <i class="fas fa-credit-card"></i>
+                </a>
+                <a onclick="tabs(2)" class="tab">
+                  <i class="fas fa-tv"></i>
+                </a>
+                <a onclick="tabs(3)" class="tab">
+                  <i class="fas fa-tasks"></i>
+                </a>
+                <a onclick="tabs(4)" class="tab">
+                  <i class="fas fa-cog"></i>
+                </a>
+              </nav>
+            </div>
+            <div class="rightbox">
+              <div class="profile tabShow">
+                <h1>Personal Info</h1>
+                <h2>Full Name</h2>
+                <input class="input" name="" type="text" value="Bello Osagie" required>
+                <h2>Birthday</h2>
+                <input class="input" name="" type="text" value="Nov 3, 1993">
+                <h2>Gender</h2>
+                <input class="input" name="" type="text" value="Male">
+                <h2>Email</h2>
+                <input type="text" name="" class="input" value="example@gmail.com" required>
+                <h2>Password</h2>
+                <input type="password" name="" class="input" value="belloosagienoah" required>
+                <button type="button" class="btn">Update</button>
+              </div>
+              <div class="payment tabShow">
+                <h1>Payment Info</h1>
+                <h2>Payment Method</h2>
+                <input class="input" name="" type="text" value="MasterCard - **** **** **** ****">
+                <h2>Billing Address</h2>
+                <input class="input" name="" type="text" value="123 street">
+                <h2>ZipCode</h2>
+                <input class="input" name="" type="text" value="100001">
+                <h2>Billing Date</h2>
+                <input type="text" name="" class="input" value="April 28, 2020">
+                <h2>Redeem Card</h2>
+                <input type="password" name="" class="input" value="Enter gift code">
+                <button type="button" class="btn">Update</button>
+              </div>
+              <div class="subscription tabShow">
+                <h1>Subscription Info</h1>
+                <h2>Payment Date</h2>
+                <p>April 29, 2020</p>
+                <h2>Next Charges</h2>
+                <p>$80.56 <span>includes tax</span></p>
+                <h2>Plan</h2>
+                <p>Limited Plan</p>
+                <h2>Monthly</h2>
+                <p>$107.99/month</p>
+                <button type="button" class="btn">Update</button>
+              </div>
+              <div class="privacy tabShow">
+                <h1>Privacy Setting</h1>
+                <h2>Manage Email Notification</h2>
+                <p></p>
+                <h2>Manage Privacy Setting</h2>
+                <p></p>
+                <h2>View Terms of Use</h2>
+                <p></p>
+                <h2>Personalized Ad Experience</h2>
+                <p></p>
+                <h2>Secure Account</h2>
+                <p></p>
+                <button type="button" class="btn">Update</button>
+              </div>
+              <div class="settings tabShow">
+                <h1>Account Settings</h1>
+                <h2>Sync WatchList</h2>
+                <p></p>
+                <h2>Hold Subscription</h2>
+                <p></p>
+                <h2>Cancel Subscription</h2>
+                <p></p>
+                <h2>Your Devices</h2>
+                <p></p>
+                <h2>Referrals</h2>
+                <p></p>
+                <button type="submit" class="btn">Update</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section>
+          <div id="editor-mode">
+            <li><span id="icon" class="material-icons" style="color: #000">cancel</i></li>
+            <div class="button"><button class="light-mode">Light Mode</button><button class="dark-mode">Dark
+                Mode</button></div>
+          </div>
+
+          <div>
+            <textarea class="editor" rows="60" cols="40" id="my_Input" value="Type Something" placeholder=""
+              autocomplete="off" wrap="on" spellcheck="false"></textarea>
+            <div>
+              <div class="tooltip">
+                <button onclick="myFunction()" onmouseout="outFunc()" class="copy">
+                  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                  Copy text
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <ul id="myUL"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <footer>
+          <form action="" method="post" id="top">
+            <div class="text-area header" id="myDIV">
+              <i id="myBtn" class="far fa-paper-plane addBtn" accesskey="s" onclick="newElement()"></i>
+              <textarea class="textarea"  name="" id="myInput" cols="10" rows="10" autocomplete="on" wrap="soft"
+                placeholder="Message contact (F5 or Alt key to send)..." autofocus></textarea>
+            </div>
+          </form>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script src="./sidebar.js" async></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    $('.tab').click(() => {
+      $(this).addClass('active').siblings().removeClass('active');
+    })
+  </script>
+
+  <script src="./setting.js" async></script>
+</body>
+
+</html>
