@@ -23,7 +23,7 @@ tabs(0);
 const showSetting = () => {
     settingSection.style.display = 'block';
     nav_Item.style.color = "#a8a4a4";
-    sendFormButton.style.display = 'none';
+    sendFormButton.style.visibility = 'hidden';
     cancelSideBarSection.style.display = 'none';
     textarea_[0].style.display = 'none';
 }
@@ -31,7 +31,7 @@ const showSetting = () => {
 const removeSetting = () => {
     settingSection.style.display = '';
     nav_Item.style.color = "#fff";
-    sendFormButton.style.display = '';
+    sendFormButton.style.visibility = 'visible';
     cancelSideBarSection.style.display = '';
     nav__2.style.cursor = '';
     textarea_[0].style.display = '';
