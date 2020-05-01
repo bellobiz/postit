@@ -156,6 +156,11 @@ li.nav-item {
   margin-top: 65px;
 }
 
+#myUL li {
+  white-space: pre-wrap;
+  white-space: pre-line;
+}
+
 /* .header {
     background-color: #f0f0f0;
     padding-top: 10px;
@@ -179,6 +184,8 @@ textarea.textarea {
   overflow-y: auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  white-space: pre-wrap;
+  white-space: pre-line;
 }
 
 textarea.textarea:focus {
