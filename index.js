@@ -1,5 +1,5 @@
 function start_scroll_down() {
-  window.scrollBy(0, 1000000);
+  window.scrollBy(0, 10000000);
 }
 
 function stop_scroll_down() {
