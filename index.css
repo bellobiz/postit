@@ -184,8 +184,6 @@ textarea.textarea {
   overflow-y: auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  white-space: pre-wrap;
-  white-space: pre-line;
 }
 
 textarea.textarea:focus {
