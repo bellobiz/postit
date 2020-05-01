@@ -1,5 +1,5 @@
 function start_scroll_down() {
-  window.scrollBy(0, 10000000);
+  window.scrollBy(0, 1000000);
 }
 
 function stop_scroll_down() {
@@ -13,6 +13,14 @@ input.addEventListener("keyup", function(event) {
     document.getElementById("myBtn").click();
   }
   if (event.keyCode === 179) {
+    event.preventDefault();
+    document.getElementById("myBtn").click();
+  }
+  if (event.keyCode === 17) {
+    event.preventDefault();
+    document.getElementById("myBtn").click();
+  }
+  if (event.keyCode === 16) {
     event.preventDefault();
     document.getElementById("myBtn").click();
   }
