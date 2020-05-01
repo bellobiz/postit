@@ -16,7 +16,7 @@ input.addEventListener("keyup", function(event) {
     event.preventDefault();
     document.getElementById("myBtn").click();
   }
-  if (event.keyCode === 16) {
+  if (event.keyCode === 175) {
     event.preventDefault();
     document.getElementById("myBtn").click();
   }
