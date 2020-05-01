@@ -159,6 +159,7 @@ li.nav-item {
 #myUL li {
   white-space: pre-wrap;
   white-space: pre-line;
+  white-space: pre;
 }
 
 /* .header {
