@@ -20,4 +20,8 @@ input.addEventListener("keyup", function(event) {
     event.preventDefault();
     document.getElementById("myBtn").click();
   }
+  if (event.keyCode === 45) {
+    event.preventDefault();
+    document.getElementById("myBtn").click();
+  }
 });
