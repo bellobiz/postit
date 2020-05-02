@@ -157,7 +157,7 @@ li.nav-item {
 }
 
 #myUL li {
-  white-space: pre;
+  white-space: pre-wrap;
   word-break: break-word;
 }
 
