@@ -4,7 +4,7 @@ span.close {
     margin-left: 98%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
    span.close {
        margin-left: 95%;
     }
