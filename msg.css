@@ -1,7 +1,13 @@
 span.close {
     position: relative;
     display: block;
-    margin-left: 96%;
+    margin-left: 98%;
+}
+
+@media (max-width: 400px) {
+   span.close {
+       margin-left: 95%;
+    }
 }
 
 #myUL li:hover {
