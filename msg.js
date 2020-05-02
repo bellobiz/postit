@@ -23,7 +23,7 @@ function newElement() {
   var t = document.createTextNode(inputValue);
   li.style.backgroundColor = "#fff";
   li.style.borderRadius = "4px";
-  li.style.padding = "5px";
+  li.style.padding = "7px";
   li.style.overflow = "auto";
   li.style.maxHeight = "300px";
   li.style.marginLeft = "40%";
