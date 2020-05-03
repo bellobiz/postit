@@ -243,6 +243,7 @@ i.far.fa-paper-plane {
   position: absolute;
   bottom: 28px;
   color: #087a08;
+  cursor: pointer;
 }
 
 @media (min-width: 1601px) {
