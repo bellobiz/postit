@@ -1,7 +1,12 @@
+#myUL li {
+    cursor: text;
+}
+
 span.close {
     position: relative;
     display: block;
     margin-left: 98%;
+    cursor: pointer;
 }
 
 @media (max-width: 420px) {
