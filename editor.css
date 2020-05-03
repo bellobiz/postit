@@ -65,6 +65,7 @@ section {
   visibility: hidden;
   width: 140px;
   background-color: #fff;
+  font-size: 1rem;
   text-align: center;
   border: 1px solid #f0f0f0;
   border-radius: 6px;
