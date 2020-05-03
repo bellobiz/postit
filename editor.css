@@ -56,7 +56,7 @@ section {
   display: inline-block;
   max-width: 100%;
   top: 430px;
-  left: 54%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
@@ -72,7 +72,7 @@ section {
   position: absolute;
   z-index: 1;
   bottom: 150%;
-  left: -64%;
+  left: -60%;
   margin-left: -75px;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
@@ -83,7 +83,7 @@ section {
   content: "";
   position: absolute;
   top: 100%;
-  left: 53%;
+  left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
