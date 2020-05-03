@@ -29,7 +29,7 @@ const outFunc = () => {
 
 const showLightMode = () => {
     textAreaSection[0].style.backgroundColor = '#fff';
-    textAreaSection[0].style.color = '#444';
+    textAreaSection[0].style.color = '#333';
 }
 
 const showDarkMode = () => {
