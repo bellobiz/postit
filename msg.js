@@ -27,7 +27,7 @@ function newElement() {
   li.style.overflow = "auto";
   li.style.maxHeight = "300px";
   li.style.marginLeft = "30%";
-  li.style.marginRight = "40px";
+  li.style.marginRight = "3%";
   li.style.fontSize = "medium";
   li.style.fontFamily = "Roboto Condensed";
   li.appendChild(t);
