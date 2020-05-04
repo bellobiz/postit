@@ -6,6 +6,9 @@
   text-align: center;
   margin-top: 30px;
   margin-bottom: 5px;
+  background-color: #eeefee;
+  padding: 5px;
+  margin-bottom: 0;
 }
 
 .light-mode {
@@ -39,7 +42,7 @@ button {
 
 .material-icons {
   position: relative;
-  top: 60px;
+  top: 64px;
   left: 90%;
   color: #fff;
 }
