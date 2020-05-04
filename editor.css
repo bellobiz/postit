@@ -9,6 +9,7 @@
   background-color: #eeefee;
   padding: 5px;
   margin-bottom: 0;
+  border-top: 2px solid #000;
 }
 
 .light-mode {
