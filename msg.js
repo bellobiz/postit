@@ -25,8 +25,8 @@ function newElement() {
   li.style.borderRadius = "4px";
   li.style.padding = "7px";
   li.style.overflow = "auto";
-  li.style.maxHeight = "350px";
-  li.style.marginLeft = "20%";
+  li.style.maxHeight = "360px";
+  li.style.marginLeft = "10%";
   li.style.marginRight = "3.5%";
   li.style.fontSize = "medium";
   li.style.fontFamily = "Roboto Condensed";
