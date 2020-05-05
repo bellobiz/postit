@@ -1,0 +1,136 @@
+.nav-item1 {
+    color: #fff;
+  }
+  
+  .button {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    background-color: #eeefee;
+    padding: 5px;
+    margin-bottom: 0;
+    border-top: 2px solid #000;
+  }
+  
+  .light-mode {
+    color: #333;
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    outline-color: #444;
+  }
+  
+  .dark-mode {
+    color: #fff;
+    background-color: #333;
+    border: 3px solid #333;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    outline-color: #fff;
+  }
+  
+  button {
+    outline-color: transparent;
+    cursor: pointer;
+  }
+  
+  .active {
+    color: #fff;
+  }
+  
+  .material-icons {
+    position: relative;
+    top: 64px;
+    left: 90%;
+    color: #fff;
+  }
+  
+  section {
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 1000000;
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    top: 430px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #fff;
+    font-size: 1rem;
+    border: 2px solid #f0f0f0;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: -60%;
+    margin-left: -75px;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #f0f0f0 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .copy {
+    border-radius: 4px;
+    background-color: #ccc;
+    border: 1px solid #ccc;
+  }
+  
+  section textarea {
+    background-image: url("editorruler.png");
+    background-color: #333;
+    color: #fff;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    padding-top: 10px;
+    border-color: #ccc;
+    resize: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 30px;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: medium;
+    overflow-y: auto;
+    margin: auto;
+    width: 100%;
+    position: fixed;
+    height: 450px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  section textarea:focus {
+    outline-color: transparent;
+  }

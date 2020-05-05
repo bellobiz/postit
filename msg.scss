@@ -1,0 +1,21 @@
+#myUL li {
+    cursor: text;
+}
+
+span.close {
+    position: relative;
+    display: block;
+    margin-left: 98%;
+    cursor: pointer;
+}
+
+@media (max-width: 820px) {
+   span.close {
+       margin-left: 95%;
+    }
+}
+
+#myUL li:hover {
+    -webkit-box-shadow: 2px 2px 8px 3px #ccc;;
+    box-shadow: 2px 2px 8px 3px #ccc;
+}
