@@ -43,7 +43,7 @@ i.icon.material-icons {
   border: .1em solid #fff;
 }
 
-nav a {
+nav a.tab {
   list-style: none;
   padding: 30px;
   color: #fff;
@@ -53,14 +53,14 @@ nav a {
   transition: all .3s ease-in-out;
 }
 
-nav a:hover {
+nav a.tab:hover {
   color: #000;
   cursor: pointer;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-nav a:first-child {
+nav a.tab:first-child {
   margin-top: 7px;
 }
 
