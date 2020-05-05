@@ -18,8 +18,8 @@
 i.icon.material-icons {
     margin-left: -97px;
     position: relative;
-    top: 25px;
     cursor: pointer;
+    left: 750%;
 }
 
 .container-setting {
