@@ -11,6 +11,7 @@ const form = document.querySelectorAll('form');
 const my_GithubPage = document.querySelector('.github-icon');
 const side_bar = document.querySelector('.col-lg-4');
 const sendFormButton = document.querySelector('.far.fa-paper-plane');
+const main_sec = document.querySelector('#myUL');
 
 const tabs = panelIndex => {
     tab.forEach(node => {
@@ -26,6 +27,7 @@ const showSetting = () => {
     sendFormButton.style.visibility = 'hidden';
     cancelSideBarSection.style.display = 'none';
     textarea_[0].style.display = 'none';
+    main_sec.style.display = 'none';
 }
 
 const removeSetting = () => {
@@ -35,6 +37,7 @@ const removeSetting = () => {
     cancelSideBarSection.style.display = '';
     nav__2.style.cursor = '';
     textarea_[0].style.display = '';
+    main_sec.style.display = '';
 }
 
 const toggleSetting = () => {
