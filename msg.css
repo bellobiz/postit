@@ -1,5 +1,19 @@
 #myUL li {
   cursor: text;
+  background-color: #fff;
+  padding: 7px;
+  overflow: auto;
+  max-height: 330px;
+  margin-left: 30%;
+  margin-right: 3.5%;
+  font-size: medium;
+  font-family: 'Roboto Condensed';
+}
+
+@media only screen (max-width: 576px) {
+  #myUL li {
+    margin-left: 15%
+  }
 }
 
 span.close {
