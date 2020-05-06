@@ -8,6 +8,7 @@
   margin-right: 3.5%;
   font-size: medium;
   font-family: 'Roboto Condensed';
+  border-radius: 4px;
 }
 
 @media only screen and (max-width: 576px) {
