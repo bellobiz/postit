@@ -34,9 +34,12 @@
   <link rel="stylesheet" href="./setting.css">
   <link rel="stylesheet" href="msg.css">
   <script src="./index.js" async></script>
+  <script src="./sidebar.js" async></script>
   <script src="./editor.js" async></script>
+  <script src="./setting.js" async></script>
   <script src="./msg.js"></script>
   <script src="./build/msg.bundle.js"></script>
+  
 </head>
 
 <body onclick="start_scroll_down()">
@@ -175,7 +178,7 @@
           </div>
 
           <div>
-            <textarea class="editor" name="chat" rows="60" cols="40" id="my_Input" value="Type Something" placeholder=""
+            <textarea class="editor" name="chat" rows="60" cols="40" id="my_Input" placeholder=""
               autocomplete="off" wrap="on" spellcheck="false"></textarea>
             <div>
               <div class="tooltip">
@@ -208,15 +211,12 @@
     </div>
   </div>
 
-  <script src="./sidebar.js" async></script>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     $('.tab').click(() => {
       $(this).addClass('active').siblings().removeClass('active');
     })
   </script>
 
-  <script src="./setting.js" async></script>
 </body>
 
 </html>
