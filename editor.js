@@ -27,14 +27,20 @@ const outFunc = () => {
     tooltip.innerHTML = "Copy to clipboard";
 }
 
-const showLightMode = () => {
+const showLightMode = event => {
     textAreaSection[0].style.backgroundColor = '#fff';
     textAreaSection[0].style.color = '#333';
+    event.target.style.display = 'none';
+    darkMode.style.display = '';
+    darkMode.style.borderRadius = '4px';
 }
 
-const showDarkMode = () => {
+const showDarkMode = event => {
     textAreaSection[0].style.backgroundColor = '';
     textAreaSection[0].style.color = '';
+    event.target.style.display = 'none'
+    lightMode.style.display = '';
+    lightMode.style.borderRadius = '4px';
 }
 
 const showEditor = () => {
