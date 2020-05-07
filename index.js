@@ -1,5 +1,5 @@
 let start_scroll_down = () => {
-  window.scrollBy(0, 10000000);
+  window.scrollBy(0, 1000000);
 }
 
 let stop_scroll_down = () => {
@@ -7,7 +7,7 @@ let stop_scroll_down = () => {
 }
 
 let input = document.getElementById("myInput");
-input.addEventListener("keyup", function(event) {
+input.addEventListener("keyup", event => {
   if (event.keyCode === 18) {
     event.preventDefault();
     document.getElementById("myBtn").click();
