@@ -1,20 +1,13 @@
 #myUL li {
   cursor: text;
-  background-color: #fff;
-  padding: 7px;
-  overflow: auto;
-  max-height: 330px;
-  margin-left: 30%;
-  margin-right: 3.5%;
-  font-size: medium;
-  font-family: 'Roboto Condensed';
   border-radius: 4px;
-}
-
-@media only screen and (max-width: 576px) {
-  #myUL li {
-    margin-left: 10%
-  }
+  padding: 10px;
+  overflow: auto;
+  max-height: 360px;
+  margin-left: 10%;
+  margin-right: 3%;
+  font-size: medium;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 span.close {
@@ -34,4 +27,9 @@ span.close {
   -webkit-box-shadow: 2px 2px 8px 3px #ccc;
   box-shadow: 2px 2px 8px 3px #ccc;
 }
-/*# sourceMappingURL=msg.css.map */
+
+@media (max-width: 821px) and (min-width: 893px){
+  #myUL li {
+    width: 20%
+  }
+}
