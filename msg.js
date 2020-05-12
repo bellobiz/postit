@@ -20,7 +20,8 @@ for (i_ of close) {
   };
 }
 
-let newElement = () => {
+let newElement;
+newElement = () => {
   let li;
   let inputValue;
   let t;
