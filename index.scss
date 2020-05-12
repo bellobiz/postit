@@ -121,7 +121,7 @@ li.nav-item {
   flex: 0 0 0;
   max-width: 0;
   color: white;
-  background-color: purple;
+  background-color: #444;
   z-index: 8000;
   top: 59px;
   position: fixed;
@@ -147,16 +147,6 @@ li.nav-item {
   -webkit-box-flex: 100%;
   flex: 0 0 100%;
   max-width: 100%;
-}
-
-#myUL {
-  margin-top: 5px;
-}
-
-#myUL li {
-  white-space: pre-wrap;
-  word-break: break-word;
-  background-color: #33df9de1;
 }
 
 .header {
@@ -242,6 +232,13 @@ i.far.fa-paper-plane {
   bottom: 28px;
   color: #087a08;
   cursor: pointer;
+}
+
+i.side-bar.material-icons {
+  display: block; 
+  margin-top: 85px; 
+  margin-left: 8px;
+  color: #fff;
 }
 
 @media (min-width: 1601px) {
