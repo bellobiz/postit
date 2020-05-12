@@ -1,5 +1,5 @@
 const closeSideBar = document.querySelector("li.cancel");
-const closeIcon = document.querySelector("i.material-icons");
+const closeIcon = document.querySelector("i.side-bar.material-icons");
 const sideBar = document.querySelector(".col-lg-4");
 const chatSection = document.querySelector(".col-lg-8");
 const textArea = document.querySelectorAll("textarea.textarea");
@@ -32,15 +32,15 @@ const closeBar = () => {
     sideBar.style.maxWidth = "";
     chatSection.style.flex = "";
     chatSection.style.maxWidth = "";
-    activeGroup.style.color = "#fff";
+    activeGroup.style.color = "";
     for (let i = 0; i <= textArea.length; i++) {
         textArea[0].style.width = "";
         textArea[0].style.marginLeft = "";
     }
     sendIcon.style.display = "";
     sendIcon.style.left = "";
-    closeSideBar.style.display = 'none';
-    closeIcon.style.display = 'none';
+    closeSideBar.style.display = '';
+    closeIcon.style.display = '';
 };
 
 const altCloseBar = () => {
