@@ -39,20 +39,21 @@ const closeBar = () => {
     }
     sendIcon.style.display = "";
     sendIcon.style.left = "";
-    closeSideBar.style.display = '';
-    closeIcon.style.display = '';
+    closeSideBar.style.display = "";
+    closeIcon.style.display = "";
 };
 
 const altCloseBar = () => {
     sideBar.style.maxWidth = "";
     sideBar.style.flex = "";
-    activeGroup.style.color = "#fff";
+    activeGroup.style.color = "";
     for (let i = 0; i <= textArea.length; i++) {
         textArea[0].style.width = "";
         textArea[0].style.marginLeft = "";
     }
     sendIcon.style.display = "";
     sendIcon.style.left = "";
+    closeIcon.style.display = "none";
 };
 
 const openSearch = () => {
