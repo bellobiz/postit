@@ -34,7 +34,9 @@
   <link rel="stylesheet" href="./setting.css">
   <link rel="stylesheet" href="msg.css">
   <script src="./index.js" async></script>
+  <script src="./sidebar.js" async></script>
   <script src="./editor.js" async></script>
+  <script src="./setting.js" async></script>
   <script src="./msg.js"></script>
   <script src="./build/msg.bundle.js"></script>
 </head>
@@ -192,16 +194,13 @@
     <textarea class="textarea"  name="chat" id="myInput" cols="10" rows="10" autocomplete="on" wrap="soft"
       placeholder="Message contact (Insert or Alt Right key to send)..." autofocus></textarea>
   </footer>
-        
-  <script src="./sidebar.js" async></script>
-
+      
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     $('.tab').click(() => {
       $(this).addClass('active').siblings().removeClass('active');
     })
   </script>
 
-  <script src="./setting.js" async></script>
 </body>
 
 </html>
