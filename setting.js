@@ -32,7 +32,7 @@ const showSetting = () => {
 
 const removeSetting = () => {
     settingSection.style.display = '';
-    nav_Item.style.color = "#fff";
+    nav_Item.style.color = '';
     sendFormButton.style.visibility = 'visible';
     cancelSideBarSection.style.display = '';
     nav__2.style.cursor = '';
