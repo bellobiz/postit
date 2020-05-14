@@ -36,12 +36,6 @@ ul.nav {
   cursor: not-allowed;
 }
 
-a {
-  text-decoration: none;
-  color: #fff;
-  -webkit-tap-highlight-color: transparent;
-}
-
 a.active {
   color: #fff;
 }
@@ -70,6 +64,10 @@ i#search-bar {
   margin-left: auto;
   margin-top: 23px;
   cursor: pointer;
+}
+
+.Insearch-contacts {
+  margin-left: -15px;
 }
 
 input[type="search"]#contacts-bar {
@@ -122,7 +120,7 @@ li.nav-item {
   max-width: 0;
   color: white;
   background-color: #444;
-  z-index: 8000;
+  z-index: 80000;
   top: 59px;
   position: fixed;
   bottom: 0;
@@ -185,7 +183,7 @@ textarea.textarea:focus {
   left: 0;
   width: 100%;
   position: fixed;
-  z-index: 1000;
+  z-index: 10800;
 }
 
 .github-icon {
@@ -235,8 +233,8 @@ i.far.fa-paper-plane {
 }
 
 i.side-bar.material-icons {
-  display: block; 
-  margin-top: 85px; 
+  display: block;
+  margin-top: 85px;
   margin-left: 8px;
   color: #fff;
 }
@@ -325,7 +323,13 @@ i.side-bar.material-icons {
   }
 }
 
-footer {
-  padding-top: 60px;
+@media (max-height: 380px) {
+  .text-area {
+    bottom: 0;
+  }
+  textarea.textarea {
+    padding-bottom: 0;
+    padding-top: 15px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
