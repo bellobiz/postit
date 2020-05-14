@@ -1,6 +1,6 @@
 let myNodelist; 
 let span;
-let txt
+let txt;
 let iter1;
 let close; 
 let iter2;
