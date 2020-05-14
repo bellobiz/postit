@@ -6,9 +6,9 @@ let close;
 let iter2;
 let div;
 let newElement;
-myNodelist = document.querySelectorAll("LI");
+myNodelist = document.querySelectorAll("li");
 for (iter1 of myNodelist) {
-  span = document.createElement("SPAN");
+  span = document.createElement("span");
   txt = document.createTextNode("❌");
   span.className = "close";
   span.appendChild(txt);
@@ -42,7 +42,7 @@ newElement = () => {
   }
   document.querySelector("#myInput").value = "";
 
-  span = document.createElement("SPAN");
+  span = document.createElement("span");
   txt = document.createTextNode("❌");
   span.className = "close";
   span.appendChild(txt);
