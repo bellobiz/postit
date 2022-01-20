@@ -9,4 +9,4 @@
 
 ----------------------------------------------------------------------------------------------------------------------
 
-[![GitHub](https://github.githubassets.com/images/modules/logos_page/Octocat.png)](https://github.com/belloosagienoah/)
+[![GitHub](https://github.githubassets.com/images/modules/logos_page/Octocat.png)](https://github.com/bellobiz/)
