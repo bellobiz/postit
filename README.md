@@ -4,7 +4,7 @@
 - You can find the deployed project at https://bellobiz.github.io/postit/
 - You can also find the project repository at https://github.com/bellobiz/postit
 - See more of my projects at https://github.com/bellobiz/
-- Website at [`TechStack`](https://techstack.surge.sh)
+- Website at [`TechStack Media`](https://techstackmedia.com)
 - You can support me on [kofi](https://ko-fi.com/ts4all)
 
 ----------------------------------------------------------------------------------------------------------------------
